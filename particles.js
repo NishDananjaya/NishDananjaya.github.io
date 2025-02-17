@@ -3,28 +3,15 @@ class Particle {
         this.canvas = canvas;
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 4 + 1; // Varying size for depth effect
-        this.speedX = Math.random() * 2 - 1;
-        this.speedY = Math.random() * 2 - 1;
-        this.opacity = Math.random() * 0.8 + 0.2;
+        this.size = Math.random() * 3 + 1;
+        this.speedX = Math.random() * 1.5 - 0.75;
+        this.speedY = Math.random() * 1.5 - 0.75;
     }
 
-    update(mouse) {
-        let dx = this.x - mouse.x;
-        let dy = this.y - mouse.y;
-        let distance = Math.sqrt(dx * dx + dy * dy);
+    update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
 
-        // Repel from mouse if close
-        if (distance < 100) {
-            this.x -= dx * 0.02;
-            this.y -= dy * 0.02;
-        }
-
-        // Add slight oscillation for smooth movement
-        this.x += this.speedX + Math.sin(Date.now() * 0.001) * 0.3;
-        this.y += this.speedY + Math.cos(Date.now() * 0.001) * 0.3;
-
-        // Screen wrap-around
         if (this.x > this.canvas.width) this.x = 0;
         if (this.x < 0) this.x = this.canvas.width;
         if (this.y > this.canvas.height) this.y = 0;
@@ -32,11 +19,9 @@ class Particle {
     }
 
     draw(ctx) {
-        ctx.fillStyle = `rgba(0, 255, 157, ${this.opacity})`;
-        ctx.shadowColor = "rgba(0, 255, 157, 0.8)";
-        ctx.shadowBlur = 10;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 255, 157, 0.8)`;
         ctx.fill();
     }
 }
@@ -45,62 +30,79 @@ function initParticles() {
     const canvas = document.getElementById('particles-canvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
-    const numberOfParticles = 60; // Increase particle count
+    let numberOfParticles = Math.min(window.innerWidth / 10, 50);
     let mouse = { x: null, y: null };
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        particles = [];
+        for (let i = 0; i < numberOfParticles; i++) {
+            particles.push(new Particle(canvas));
+        }
     }
 
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
 
-    // Mouse movement tracking
+    // Mouse move effect
     canvas.addEventListener("mousemove", (event) => {
         mouse.x = event.x;
         mouse.y = event.y;
     });
 
-    // Create particles
-    for (let i = 0; i < numberOfParticles; i++) {
-        particles.push(new Particle(canvas));
-    }
-
-    let gradientColor = 0;
+    canvas.addEventListener("mouseleave", () => {
+        mouse.x = null;
+        mouse.y = null;
+    });
 
     function animate() {
-        gradientColor += 0.5; // Change gradient over time
-
-        let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-        gradient.addColorStop(0, `hsl(${gradientColor % 360}, 50%, 15%)`);
-        gradient.addColorStop(1, `hsl(${(gradientColor + 100) % 360}, 50%, 5%)`);
-
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.globalCompositeOperation = 'destination-over';
 
         particles.forEach(particle => {
-            particle.update(mouse);
+            particle.update();
             particle.draw(ctx);
         });
 
-        // Improved Connector Lines
+        let maxConnections = 5;
         particles.forEach((particle1, index) => {
-            for (let j = index + 1; j < particles.length; j++) {
+            let connections = 0;
+            for (let j = index + 1; j < particles.length && connections < maxConnections; j++) {
                 const particle2 = particles[j];
-                const distance = Math.hypot(particle1.x - particle2.x, particle1.y - particle2.y);
-                
+                const dx = particle1.x - particle2.x;
+                const dy = particle1.y - particle2.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
                 if (distance < 120) {
-                    const opacity = Math.exp(-distance / 50) * 0.7;
+                    connections++;
                     ctx.beginPath();
-                    ctx.strokeStyle = `rgba(0, 255, 157, ${opacity})`;
-                    ctx.lineWidth = 1.5;
+                    ctx.strokeStyle = `rgba(0, 255, 157, ${Math.exp(-distance / 50) * 0.5})`;
+                    ctx.lineWidth = 1;
                     ctx.moveTo(particle1.x, particle1.y);
                     ctx.lineTo(particle2.x, particle2.y);
                     ctx.stroke();
                 }
             }
         });
+
+        // Mouse Interaction: Attract nearby particles
+        if (mouse.x !== null && mouse.y !== null) {
+            particles.forEach(particle => {
+                const dx = mouse.x - particle.x;
+                const dy = mouse.y - particle.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < 150) {
+                    ctx.beginPath();
+                    ctx.strokeStyle = `rgba(255, 255, 255, ${Math.exp(-distance / 50)})`;
+                    ctx.lineWidth = 1.5;
+                    ctx.moveTo(mouse.x, mouse.y);
+                    ctx.lineTo(particle.x, particle.y);
+                    ctx.stroke();
+                }
+            });
+        }
 
         requestAnimationFrame(animate);
     }
