@@ -17,7 +17,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <span class="logo-text">Portfolio</span>
+                <span class="logo-text">NishD®</span>
                 <span class="logo-dot"></span>
             </a>
             <div class="nav-toggle">
@@ -40,6 +40,12 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg"></div>
+        <canvas id="particles-canvas"></canvas>
+        <div class="gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
         <div class="hero-content">
             <div class="title-wrapper">
                 <h1>Hi, I'm <span class="gradient-text">Nishan Dananjaya</span></h1>
@@ -98,9 +104,12 @@
     </section>
 
     <!-- Skills Section -->
+        <!-- Skills Section -->
+<!-- Skills Section -->
     <section id="skills" class="section">
         <h2 class="section-heading" data-text="Technical Skills">Technical Skills</h2>
         <div class="skills-container">
+            <!-- Embedded Systems Skill Card -->
             <div class="skill-card glass-card reveal-up">
                 <div class="skill-header">
                     <div class="skill-icon">
@@ -130,8 +139,17 @@
                         </div>
                     </div>
                 </div>
+                <!-- Tool Icons -->
+                <div class="skill-tools">
+                    <div class="tool-circle"><i class="fas fa-microchip"></i></div>
+                    <div class="tool-circle"><i class="fas fa-cogs"></i></div>
+                    <div class="tool-circle"><i class="fas fa-desktop"></i></div>
+                    <div class="tool-circle"><i class="fas fa-wifi"></i></div>
+                    <div class="tool-circle"><i class="fas fa-microchip"></i></div>
+                </div>
             </div>
 
+            <!-- Artificial Intelligence Skill Card -->
             <div class="skill-card glass-card reveal-up">
                 <div class="skill-header">
                     <div class="skill-icon">
@@ -161,17 +179,65 @@
                         </div>
                     </div>
                 </div>
+                <!-- Tool Icons -->
+                <div class="skill-tools">
+                    <div class="tool-circle"><i class="fas fa-brain"></i></div>
+                    <div class="tool-circle"><i class="fas fa-project-diagram"></i></div>
+                    <div class="tool-circle"><i class="fas fa-chart-line"></i></div>
+                    <div class="tool-circle"><i class="fas fa-eye"></i></div>
+                    <div class="tool-circle"><i class="fas fa-language"></i></div>
+                </div>
+            </div>
+
+            <!-- Programming Skill Card -->
+            <div class="skill-card glass-card reveal-up">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item" data-value="90">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                            <div class="progress-glow"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-value="85">
+                        <div class="skill-info">
+                            <span>C++</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                            <div class="progress-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tool Icons -->
+                <div class="skill-tools">
+                    <div class="tool-circle"><i class="fab fa-python"></i></div>
+                    <div class="tool-circle"><i class="fab fa-js"></i></div>
+                    <div class="tool-circle"><i class="fab fa-cuttlefish"></i></div>
+                    <div class="tool-circle"><i class="fab fa-java"></i></div>
+                    <div class="tool-circle"><i class="fab fa-google"></i></div>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2 class="section-heading" data-text="Featured Projects">Featured Projects</h2>
         <div class="projects-container">
+            <!-- Existing Smart Home Automation Project -->
             <div class="project-card glass-card reveal-up">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8" alt="Smart Home Automation">
+                    <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeVTUrFLvt9RcA6r-PNc8yRGrzwh7d_JfB6AjxDAlIKL5vmScIi9dNwj-UIQ3bq-yMiZBgLnG97iRjB9TBvZw0mDAbHSSIGdIv1Mw1Q-r-67p7Ql8seXBOFV_3dZBtGAIxqdkoa02SbEXavxWNIMbeBfXe4?key=2qoHpCtVeGkrIsOF-RzNgw" alt="Smart Home Automation">
                     <div class="project-overlay">
                         <div class="project-links">
                             <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
@@ -190,7 +256,8 @@
                     </div>
                 </div>
             </div>
-
+    
+            <!-- Existing AI Traffic Analysis Project -->
             <div class="project-card glass-card reveal-up">
                 <div class="project-image">
                     <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="AI Traffic Analysis">
@@ -208,6 +275,29 @@
                         <span>Python</span>
                         <span>OpenCV</span>
                         <span>Deep Learning</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- New AI Chatbot Project -->
+            <div class="project-card glass-card reveal-up">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="AI Chatbot">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>AI Chatbot</h3>
+                    <p>An intelligent chatbot using Natural Language Processing (NLP) and Python.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>ML</span>
+                        <span>Flask</span>
                     </div>
                 </div>
             </div>
@@ -269,5 +359,6 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="particles.js"></script>
 </body>
 </html>
