@@ -830,6 +830,65 @@ body {
   }
 }
 
+/* Skill Tools Section */
+.skill-tools {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tool-circle {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 255, 157, 0.1);
+  border: 1px solid rgba(0, 255, 157, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--accent);
+  backdrop-filter: blur(5px);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 255, 157, 0.1);
+}
+
+.tool-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 255, 157, 0.2), transparent 70%);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.tool-circle:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 255, 157, 0.3);
+  background: rgba(0, 255, 157, 0.2);
+}
+
+.tool-circle:hover::before {
+  opacity: 1;
+}
+
+.tool-circle i {
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.tool-circle:hover i {
+  color: var(--background);
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hamburger {

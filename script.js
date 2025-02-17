@@ -209,3 +209,20 @@ contactForm.addEventListener('submit', async (e) => {
         submitButton.disabled = false;
     }
 });
+
+// Tool interaction for skill cards
+const skillCards = document.querySelectorAll('.skill-card');
+
+skillCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.querySelectorAll('.tool').forEach((tool, index) => {
+            tool.style.transitionDelay = `${index * 0.1}s`;
+        });
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.querySelectorAll('.tool').forEach(tool => {
+            tool.style.transitionDelay = '0s';
+        });
+    });
+});
