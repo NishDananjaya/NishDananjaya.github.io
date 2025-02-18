@@ -210,19 +210,70 @@ contactForm.addEventListener('submit', async (e) => {
     }
 });
 
-// Tool interaction for skill cards
-const skillCards = document.querySelectorAll('.skill-card');
+// Typing Animation for Education Section
+// Typing Animation for Education Section (Infinite Loop)
+// Typing Animation for Education Section (Infinite Loop)
+// Typing Animation for Education Section (Synchronized Completion)
+document.addEventListener("DOMContentLoaded", () => {
+    const educationCards = document.querySelectorAll('.education-card');
 
-skillCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.querySelectorAll('.tool').forEach((tool, index) => {
-            tool.style.transitionDelay = `${index * 0.1}s`;
-        });
-    });
+    educationCards.forEach((card) => {
+        const typingElements = card.querySelectorAll('.typing-animation');
 
-    card.addEventListener('mouseleave', () => {
-        card.querySelectorAll('.tool').forEach(tool => {
-            tool.style.transitionDelay = '0s';
-        });
+        // Function to calculate the longest animation duration
+        function getLongestAnimationDuration(elements) {
+            let maxDuration = 0;
+            elements.forEach((element) => {
+                const text = element.getAttribute('data-text');
+                if (text) {
+                    const duration = text.length * 100; // typingSpeed is 100ms per character
+                    if (duration > maxDuration) {
+                        maxDuration = duration;
+                    }
+                }
+            });
+            return maxDuration;
+        }
+
+        // Function to start typing animation for all elements
+        function startTypingAnimation() {
+            const longestDuration = getLongestAnimationDuration(typingElements);
+
+            typingElements.forEach((element) => {
+                const text = element.getAttribute('data-text');
+                if (!text) return;
+
+                // Clear any existing text and reset the cursor
+                element.textContent = "";
+                element.style.borderRight = "2px solid var(--accent)";
+
+                let i = 0;
+                const typingSpeed = 100; // Adjust speed if needed
+
+                function typeText() {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(typeText, typingSpeed);
+                    } else {
+                        // Remove cursor after typing is complete
+                        element.style.borderRight = "none";
+
+                        // Wait for the longest animation to finish before restarting
+                        setTimeout(() => {
+                            element.style.borderRight = "2px solid var(--accent)";
+                            i = 0;
+                            element.textContent = ""; // Clear text for loop
+                            typeText(); // Restart typing effect
+                        }, longestDuration - (text.length * typingSpeed) + 2000); // Add 2s delay for all animations to sync
+                    }
+                }
+
+                typeText(); // Start the typing animation
+            });
+        }
+
+        // Start all typing animations at the same time
+        startTypingAnimation();
     });
 });
