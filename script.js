@@ -277,3 +277,37 @@ document.addEventListener("DOMContentLoaded", () => {
         startTypingAnimation();
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    const mainContent = document.getElementById('main-content');
+    const progressLine = document.querySelector('.processing-line');
+    const progressText = document.querySelector('.progress-text');
+
+    const duration = 3000; // 3 seconds
+    const interval = 30; // Update every 30ms
+    const steps = duration / interval;
+    let currentStep = 0;
+
+    const timer = setInterval(() => {
+        currentStep++;
+        const progress = (currentStep / steps) * 100;
+        
+        // Update progress line and text
+        progressLine.style.width = `${progress}%`;
+        progressText.textContent = `${Math.round(progress)}%`;
+        
+        if (currentStep >= steps) {
+        clearInterval(timer);
+        
+        // Add fade-out class to loading screen
+        loadingScreen.classList.add('fade-out');
+        
+        // After fade animation, hide loading screen and show main content
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+            mainContent.classList.remove('hidden');
+        }, 300);
+        }
+    }, interval);
+    });
