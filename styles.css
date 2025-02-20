@@ -409,16 +409,88 @@ body {
   padding: 2rem;
 }
 
+/* Updated CSS for a smaller download button */
 .download-btn {
-  margin-top: 2rem;
   position: relative;
-  padding: 1rem 2rem;
-  background: var(--accent);
+  margin-top: 15px; /* Moves the button down */
+  margin-right: 10px; /* Moves the button to the left */
+  padding: 0.8rem 1.8rem; /* Reduced padding for smaller size */
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
   border: none;
   color: var(--background);
+  font-size: 0.95rem; /* Smaller font size */
   font-weight: 600;
   cursor: pointer;
+  border-radius: 2rem; /* Slightly rounded corners */
   overflow: hidden;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem; /* Reduced gap between icon and text */
+  box-shadow: 0 4px 15px rgba(0, 255, 157, 0.3); /* Subtle shadow */
+  text-decoration: none;
+}
+
+.download-btn .btn-glow {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+  );
+  transition: 0.7s;
+}
+
+.download-btn:hover .btn-glow {
+  left: 100%;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px); /* Smaller hover lift */
+  box-shadow: 0 6px 20px rgba(0, 255, 157, 0.4); /* Slightly stronger shadow on hover */
+}
+
+.download-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 255, 157, 0.3); /* Smaller shadow on click */
+}
+
+.download-btn i {
+  font-size: 1rem; /* Smaller icon size */
+  transition: var(--transition);
+}
+
+.download-btn:hover i {
+  transform: translateY(-1px); /* Smaller icon lift on hover */
+}
+
+/* Pulse animation for subtle attention */
+@keyframes pulse-glow {
+  0% {
+      box-shadow: 0 0 0 0 rgba(0, 255, 157, 0.3);
+  }
+  70% {
+      box-shadow: 0 0 0 10px rgba(0, 255, 157, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(0, 255, 157, 0);
+  }
+}
+
+.download-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  animation: pulse-glow 2s infinite;
 }
 
 /* Skills Section */
