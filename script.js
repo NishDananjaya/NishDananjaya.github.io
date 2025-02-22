@@ -311,3 +311,102 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, interval);
     });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Initialize progress bars with improved performance
+        const skillItems = document.querySelectorAll('.skill-item');
+        
+        const progressObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              requestAnimationFrame(() => {
+                const progressBar = entry.target.querySelector('.progress');
+                const value = entry.target.dataset.value;
+                progressBar.style.width = `${value}%`;
+              });
+              progressObserver.unobserve(entry.target);
+            }
+          });
+        }, { 
+          threshold: 0.5,
+          rootMargin: '50px'
+        });
+      
+        skillItems.forEach(item => progressObserver.observe(item));
+      
+        // Enhanced reveal animations
+        const revealElements = document.querySelectorAll('.reveal-up');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              requestAnimationFrame(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0) scale(1)';
+                entry.target.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+              });
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { 
+          threshold: 0.1,
+          rootMargin: '50px'
+        });
+      
+        revealElements.forEach(el => {
+          el.style.transform = 'translateY(30px) scale(0.95)';
+          revealObserver.observe(el);
+        });
+      
+        // Optimized card hover effects
+        const cards = document.querySelectorAll('.skill-card');
+        
+        const handleMouseMove = (e) => {
+          const card = e.currentTarget;
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+      
+          requestAnimationFrame(() => {
+            const rotateX = (y - rect.height / 2) / 20;
+            const rotateY = (rect.width / 2 - x) / 20;
+            
+            card.style.transform = `
+              perspective(1000px)
+              rotateX(${rotateX}deg)
+              rotateY(${rotateY}deg)
+              scale3d(1.02, 1.02, 1.02)
+            `;
+          });
+        };
+      
+        const resetCardTransform = (card) => {
+          requestAnimationFrame(() => {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+          });
+        };
+      
+        cards.forEach(card => {
+          card.style.willChange = 'transform';
+          card.addEventListener('mousemove', handleMouseMove);
+          card.addEventListener('mouseleave', () => resetCardTransform(card));
+        });
+      
+        // Tool icon hover effects
+        const toolIcons = document.querySelectorAll('.tool-wrapper');
+        
+        toolIcons.forEach(icon => {
+          icon.addEventListener('mouseenter', () => {
+            requestAnimationFrame(() => {
+              icon.style.transform = 'translateY(-5px) scale(1.1)';
+            });
+          });
+          
+          icon.addEventListener('mouseleave', () => {
+            requestAnimationFrame(() => {
+              icon.style.transform = 'translateY(0) scale(1)';
+            });
+          });
+        });
+      });
