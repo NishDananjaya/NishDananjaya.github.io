@@ -1587,211 +1587,233 @@ body {
   }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+  /* General Section Adjustments */
   .section {
     padding: 2rem 1rem;
   }
-  
+
   .section-heading {
     font-size: 2rem;
   }
-  
-  .section-heading::after {
-    font-size: 3rem;
-  }
-  
-  .skill-card {
-    padding: 1.5rem;
-  }
-  
-  .skill-tools {
-    gap: 0.8rem; /* Reduced gap for mobile */
-  }
-  
-  .tool-icon {
-    width: 1.6rem; /* Even smaller on mobile */
-    height: 1.6rem;
-  }
-}
-
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer-container {
-      flex-direction: column;
-      gap: 1.5rem;
-      text-align: center;
-  }
-
-  .footer-social {
-      order: 1;
-  }
-
-  .footer-copyright {
-      order: 2;
-  }
-
-  .footer-back-to-top {
-      order: 3;
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hamburger {
-      display: block;
-  }
-
-  .nav-links {
-      position: fixed;
-      top: 80px;
-      right: -100%;
-      width: 100%;
-      height: calc(100vh - 80px);
-      background: rgba(10, 10, 10, 0.95);
-      backdrop-filter: blur(10px);
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-      transition: var(--transition);
-  }
-
-  .nav-links.active {
-      right: 0;
-  }
-
-  .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .hamburger.active span:nth-child(2) {
-      opacity: 0;
-  }
-
-  .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px);
-  }
-
-  .title-wrapper h1 {
-      font-size: 2.5rem;
-  }
-
-  .about-container {
-      grid-template-columns: 1fr;
-  }
 
   .section-heading::before {
-      font-size: 3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-wrapper h1 {
-      font-size: 2rem;
+    font-size: 3rem;
   }
 
-  .typewriter {
-      font-size: 1.2rem;
+  /* Navbar and Hamburger Menu Improvements */
+  .nav-container {
+    position: relative; /* Added for proper positioning context */
   }
 
-  .section-heading {
-      font-size: 2rem;
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  /* Navbar adjustments for mobile */
   .hamburger {
-    display: block; /* Show hamburger menu */
+    display: block;
+    position: fixed; /* Changed to fixed for consistent positioning */
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+    cursor: pointer;
+    padding: 0.5rem;
+    background: transparent;
+    border: none;
   }
 
-  .nav-links {
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--text-primary);
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Improved Close Button Styles */
+  .hamburger.active {
     position: fixed;
-    top: 80px;
-    right: -100%; /* Hide nav links off-screen */
-    width: 100%;
-    height: calc(100vh - 80px);
-    background: rgba(10, 10, 10, 0.95);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    transition: var(--transition);
+    right: 1rem;
   }
 
-  .nav-links.active {
-    right: 0; /* Slide in nav links when active */
-  }
-
-  /* Hamburger menu animations */
   .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
+    background: #fff; /* Ensure visibility against dark menu background */
   }
 
   .hamburger.active span:nth-child(2) {
     opacity: 0;
+    transform: translateX(-20px);
   }
 
   .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
+    background: #fff;
   }
 
-  /* Adjust hero section for mobile */
-  .title-wrapper h1 {
-    font-size: 2.5rem; /* Smaller font size for mobile */
+  /* Improved Navigation Menu */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    gap: 2rem; /* Added for better spacing between nav items */
   }
 
-  /* Adjust about section for mobile */
-  .about-container {
-    grid-template-columns: 1fr; /* Single column layout */
+  .nav-links.active {
+    right: 0;
   }
 
-  /* Adjust section headings for mobile */
-  .section-heading::before {
-    font-size: 3rem; /* Smaller decorative text */
+  .nav-links a {
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
   }
 
-  /* Footer adjustments for mobile */
-  .footer-container {
-    flex-direction: column; /* Stack footer items vertically */
-    gap: 1.5rem;
-    text-align: center;
+  .nav-links a:hover {
+    opacity: 1;
   }
 
-  .footer-social {
-    order: 1; /* Reorder social links */
+  /* Skill Section Adjustments */
+  .skill-card {
+    padding: 1.5rem;
   }
 
-  .footer-copyright {
-    order: 2; /* Reorder copyright text */
-  }
-
-  .footer-back-to-top {
-    order: 3; /* Reorder back-to-top button */
-  }
-
-  /* Skill tools adjustments for mobile */
   .skill-tools {
-    gap: 0.8rem; /* Reduced gap for mobile */
+    gap: 0.8rem;
   }
 
   .tool-icon {
-    width: 1.6rem; /* Smaller icons for mobile */
+    width: 1.6rem;
     height: 1.6rem;
+  }
+
+  /* Footer Adjustments */
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 2rem 1rem; /* Added padding */
+  }
+
+  .footer-social {
+    order: 1;
+  }
+
+  .footer-copyright {
+    order: 2;
+  }
+
+  .footer-back-to-top {
+    order: 3;
+  }
+
+  /* Hero Section Adjustments */
+  .title-wrapper h1 {
+    font-size: 2.5rem;
+  }
+
+  /* About Section Adjustments */
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2rem; /* Added gap */
+  }
+
+  /* Projects Section Adjustments */
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 2rem; /* Added consistent gap */
+  }
+
+  .project-card {
+    height: auto;
+  }
+
+  .project-image {
+    height: 200px; /* Increased for better visibility */
+    object-fit: cover; /* Added for better image handling */
+  }
+
+  /* Contact Section Adjustments */
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem; /* Added consistent spacing */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 0.75rem; /* Added consistent padding */
   }
 }
 
 @media (max-width: 480px) {
-  /* Further adjustments for smaller screens */
+  /* Additional Small Screen Adjustments */
   .title-wrapper h1 {
-    font-size: 2rem; /* Even smaller font size */
+    font-size: 2rem;
   }
 
   .typewriter {
-    font-size: 1.2rem; /* Smaller typewriter text */
+    font-size: 1.2rem;
   }
 
   .section-heading {
-    font-size: 2rem; /* Smaller section headings */
+    font-size: 1.75rem; /* Adjusted for better readability */
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .tool-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  /* Navigation Adjustments for Smaller Screens */
+  .nav-links a {
+    font-size: 1.1rem; /* Slightly smaller font for better fit */
+  }
+
+  .hamburger {
+    top: 0.75rem; /* Adjusted position */
+    right: 0.75rem;
+  }
+
+  /* Project Cards for Smaller Screens */
+  .project-image {
+    height: 180px; /* Adjusted for smaller screens */
+  }
+
+  /* Form Elements for Smaller Screens */
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
   }
 }
