@@ -1522,10 +1522,11 @@ body {
 }
 
 .tool-icon {
-  width: 1.9rem;
-  height: 1.9rem;
+  width: 2.2rem;
+  height: 2.2rem;
   color: white !important; /* Force white color */
   transition: var(--transition);
+  filter: brightness(0) invert(1);
   padding: 0.3rem;
   z-index: 1;
 }
