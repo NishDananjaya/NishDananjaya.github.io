@@ -109,3 +109,19 @@ function initParticles() {
 
     animate();
 }
+
+document.addEventListener('DOMContentLoaded', initParticles);
+
+
+
+function detectScaling() {
+    const scaling = window.devicePixelRatio;
+    if (scaling === 1) {
+      document.body.classList.add('scale-100');
+    } else {
+      document.body.classList.remove('scale-100');
+    }
+  }
+  
+  window.addEventListener('resize', detectScaling);
+  detectScaling();
