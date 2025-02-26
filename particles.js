@@ -109,5 +109,3 @@ function initParticles() {
 
     animate();
 }
-
-document.addEventListener('DOMContentLoaded', initParticles);

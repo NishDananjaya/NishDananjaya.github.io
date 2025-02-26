@@ -211,9 +211,6 @@ contactForm.addEventListener('submit', async (e) => {
 });
 
 // Typing Animation for Education Section
-// Typing Animation for Education Section (Infinite Loop)
-// Typing Animation for Education Section (Infinite Loop)
-// Typing Animation for Education Section (Synchronized Completion)
 document.addEventListener("DOMContentLoaded", () => {
     const educationCards = document.querySelectorAll('.education-card');
 
@@ -313,100 +310,285 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // Initialize progress bars with improved performance
-        const skillItems = document.querySelectorAll('.skill-item');
-        
-        const progressObserver = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              requestAnimationFrame(() => {
-                const progressBar = entry.target.querySelector('.progress');
-                const value = entry.target.dataset.value;
-                progressBar.style.width = `${value}%`;
-              });
-              progressObserver.unobserve(entry.target);
-            }
-          });
-        }, { 
-          threshold: 0.5,
-          rootMargin: '50px'
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize progress bars with improved performance
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    const progressObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            requestAnimationFrame(() => {
+            const progressBar = entry.target.querySelector('.progress');
+            const value = entry.target.dataset.value;
+            progressBar.style.width = `${value}%`;
+            });
+            progressObserver.unobserve(entry.target);
+        }
         });
-      
-        skillItems.forEach(item => progressObserver.observe(item));
-      
-        // Enhanced reveal animations
-        const revealElements = document.querySelectorAll('.reveal-up');
-        
-        const revealObserver = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              requestAnimationFrame(() => {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0) scale(1)';
-                entry.target.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
-              });
-              revealObserver.unobserve(entry.target);
-            }
-          });
-        }, { 
-          threshold: 0.1,
-          rootMargin: '50px'
+    }, { 
+        threshold: 0.5,
+        rootMargin: '50px'
+    });
+    
+    skillItems.forEach(item => progressObserver.observe(item));
+    
+    // Enhanced reveal animations
+    const revealElements = document.querySelectorAll('.reveal-up');
+    
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            requestAnimationFrame(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0) scale(1)';
+            entry.target.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+            });
+            revealObserver.unobserve(entry.target);
+        }
         });
-      
-        revealElements.forEach(el => {
-          el.style.transform = 'translateY(30px) scale(0.95)';
-          revealObserver.observe(el);
-        });
-      
-        // Optimized card hover effects
-        const cards = document.querySelectorAll('.skill-card');
+    }, { 
+        threshold: 0.1,
+        rootMargin: '50px'
+    });
+    
+    revealElements.forEach(el => {
+        el.style.transform = 'translateY(30px) scale(0.95)';
+        revealObserver.observe(el);
+    });
+    
+    // Optimized card hover effects
+    const cards = document.querySelectorAll('.skill-card');
+    
+    const handleMouseMove = (e) => {
+        const card = e.currentTarget;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+    
+        requestAnimationFrame(() => {
+        const rotateX = (y - rect.height / 2) / 20;
+        const rotateY = (rect.width / 2 - x) / 20;
         
-        const handleMouseMove = (e) => {
-          const card = e.currentTarget;
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-      
-          requestAnimationFrame(() => {
-            const rotateX = (y - rect.height / 2) / 20;
-            const rotateY = (rect.width / 2 - x) / 20;
-            
-            card.style.transform = `
-              perspective(1000px)
-              rotateX(${rotateX}deg)
-              rotateY(${rotateY}deg)
-              scale3d(1.02, 1.02, 1.02)
-            `;
-          });
-        };
-      
-        const resetCardTransform = (card) => {
-          requestAnimationFrame(() => {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
-          });
-        };
-      
+        card.style.transform = `
+            perspective(1000px)
+            rotateX(${rotateX}deg)
+            rotateY(${rotateY}deg)
+            scale3d(1.02, 1.02, 1.02)
+        `;
+        });
+    };
+    
+    const resetCardTransform = (card) => {
+        requestAnimationFrame(() => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+        });
+    };
+    
+    cards.forEach(card => {
+        card.style.willChange = 'transform';
+        card.addEventListener('mousemove', handleMouseMove);
+        card.addEventListener('mouseleave', () => resetCardTransform(card));
+    });
+    
+    // Tool icon hover effects
+    const toolIcons = document.querySelectorAll('.tool-wrapper');
+    
+    toolIcons.forEach(icon => {
+        icon.addEventListener('mouseenter', () => {
+        requestAnimationFrame(() => {
+            icon.style.transform = 'translateY(-5px) scale(1.1)';
+        });
+        });
+        
+        icon.addEventListener('mouseleave', () => {
+        requestAnimationFrame(() => {
+            icon.style.transform = 'translateY(0) scale(1)';
+        });
+        });
+    });
+});
+
+//=============================================certificate section=============================================
+
+const certificates = [
+    {
+        title: "Fundamentals of Digital System Design",
+        issuer: "ENTC, University of Moratuwa",
+        date: "2025",
+        badges: [
+            { text: "System Verilog", icon: "fa-code" },
+            { text: "Digital Electronics", iconType: "image", icon: "./assets/react.svg" },
+            { text: "FPGA", iconType: "image", icon: "./assets/nodejs.svg" }
+        ],
+        icon: "fa-certificate",
+        certificateUrl: "https://drive.google.com/file/d/1MqN9zeXr00Z1NGYuPeOz8tAU9edstPKH/view?usp=drive_link" // Add your Google Drive link here
+    },
+    {
+        title: "Object-Oriented Programming Python",
+        issuer: "Udemy",
+        date: "2025",
+        badges: [
+            { text: "Python", iconType: "image", icon: "./assets/python.svg"},
+            { text: "Encapsulation"},
+            { text: "Inheritance"},
+        ],
+        icon: "fa-certificate",
+        certificateUrl: "https://drive.google.com/file/d/1pJeUWMwsTYso2ZJQEoHSMfl1tNZ2MSiA/view?usp=drive_link" // Add your Google Drive link here
+    },
+    {
+        title: "Machine Learning specialization",
+        issuer: "DeepLearning.AI",
+        date: "2024",
+        badges: [
+            {  text: "Scikit learn", iconType: "image", icon: "./assets/python.svg" },
+            {  text: "Tensorflow", iconType: "image", icon: "./assets/python.svg"}, // Fixed typo
+            {  text: "Matplotlib", iconType: "image", icon: "./assets/python.svg"}, // Fixed typo
+        ],
+        icon: "fa-certificate",
+        certificateUrl: "https://drive.google.com/file/d/1_ddhjtz8ZPvHExky-agMp0QhLZRgCsRy/view?usp=sharing" // Add your Google Drive link here
+    }
+];
+
+
+function createCertificateCard(certificate) {
+    const card = document.createElement('div');
+    card.className = 'certificate-card';
+    
+    // Add data attribute for certificate URL
+    card.dataset.url = certificate.certificateUrl;
+    
+    // Add click event listener to open certificate
+    card.addEventListener('click', function() {
+        window.open(this.dataset.url, '_blank');
+    });
+
+    const icon = document.createElement('div');
+    icon.className = 'certificate-icon';
+    icon.innerHTML = `<i class="fas ${certificate.icon}"></i>`;
+
+    const contentWrapper = document.createElement('div');
+    contentWrapper.className = 'certificate-content';
+
+    const title = document.createElement('h3');
+    title.className = 'certificate-title';
+    title.textContent = certificate.title;
+
+    const issuer = document.createElement('div');
+    issuer.className = 'certificate-issuer';
+    issuer.innerHTML = `<i class="fas fa-building"></i> ${certificate.issuer}`;
+
+    const date = document.createElement('div');
+    date.className = 'certificate-date';
+    date.innerHTML = `<i class="fas fa-calendar-alt"></i> ${certificate.date}`;
+
+    const badgesContainer = document.createElement('div');
+    badgesContainer.className = 'badges-container';
+    
+    certificate.badges.forEach(badge => {
+        const badgeElement = document.createElement('span');
+        badgeElement.className = 'badge';
+        
+        if (badge.iconType === 'image') {
+            badgeElement.innerHTML = `<img src="${badge.icon}" alt="${badge.text}" class="badge-icon"> ${badge.text}`;
+        } else {
+            badgeElement.innerHTML = `<i class="fas ${badge.icon || 'fa-tag'}"></i> ${badge.text}`;
+        }
+        
+        badgesContainer.appendChild(badgeElement);
+    });
+
+    const viewCertificate = document.createElement('div');
+    viewCertificate.className = 'view-certificate';
+    viewCertificate.innerHTML = `<i class="fas fa-external-link-alt"></i> View Certificate`;
+
+    card.appendChild(icon);
+    contentWrapper.appendChild(title);
+    contentWrapper.appendChild(issuer);
+    contentWrapper.appendChild(date);
+    contentWrapper.appendChild(badgesContainer);
+    contentWrapper.appendChild(viewCertificate);
+    card.appendChild(contentWrapper);
+
+    // Set initial CSS variables for mouse effect
+    card.style.setProperty('--mouse-x', '0px');
+    card.style.setProperty('--mouse-y', '0px');
+
+    return card;
+}
+
+function initializeCertificates() {
+    const grid = document.querySelector('.certificates-grid');
+    const fragment = document.createDocumentFragment(); // Use a document fragment to reduce reflows
+
+    certificates.forEach(cert => {
+        const card = createCertificateCard(cert);
+        fragment.appendChild(card);
+    });
+
+    grid.appendChild(fragment);
+
+    // Make cards visible with staggered animation after they're added
+    setTimeout(() => {
+        document.querySelectorAll('.certificate-card').forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, index * 150);
+        });
+    }, 100);
+
+    // Optimized mousemove effect using requestAnimationFrame
+    let mouseX = 0, mouseY = 0;
+    let ticking = false;
+    const cards = document.querySelectorAll('.certificate-card');
+
+    const handleMouseMove = (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                updateCardEffects();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    };
+
+    const updateCardEffects = () => {
         cards.forEach(card => {
-          card.style.willChange = 'transform';
-          card.addEventListener('mousemove', handleMouseMove);
-          card.addEventListener('mouseleave', () => resetCardTransform(card));
+            const rect = card.getBoundingClientRect();
+            
+            // Calculate the mouse position relative to the card
+            const x = mouseX - rect.left;
+            const y = mouseY - rect.top;
+
+            // Check if mouse is within or near the card's bounds
+            if (x >= -100 && x <= rect.width + 100 && 
+                y >= -100 && y <= rect.height + 100) {
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            }
         });
-      
-        // Tool icon hover effects
-        const toolIcons = document.querySelectorAll('.tool-wrapper');
-        
-        toolIcons.forEach(icon => {
-          icon.addEventListener('mouseenter', () => {
-            requestAnimationFrame(() => {
-              icon.style.transform = 'translateY(-5px) scale(1.1)';
-            });
-          });
-          
-          icon.addEventListener('mouseleave', () => {
-            requestAnimationFrame(() => {
-              icon.style.transform = 'translateY(0) scale(1)';
-            });
-          });
-        });
-      });
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', initializeCertificates);
+
+document.addEventListener('DOMContentLoaded', initParticles);
+
+
+
+function detectScaling() {
+    const scaling = window.devicePixelRatio;
+    if (scaling === 1) {
+      document.body.classList.add('scale-100');
+    } else {
+      document.body.classList.remove('scale-100');
+    }
+  }
+  
+  window.addEventListener('resize', detectScaling);
+  detectScaling();
