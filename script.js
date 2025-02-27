@@ -416,9 +416,9 @@ const certificates = [
         issuer: "ENTC, University of Moratuwa",
         date: "2025",
         badges: [
-            { text: "System Verilog", icon: "fa-code" },
-            { text: "Digital Electronics", iconType: "image", icon: "./assets/react.svg" },
-            { text: "FPGA", iconType: "image", icon: "./assets/nodejs.svg" }
+            { text: "System Verilog",  iconType: "image", icon: "assets/sv.svg" },
+            { text: "Digital Electronics", iconType: "image", icon: "assets/andgate.svg" },
+            { text: "FPGA", iconType: "image", icon: "assets/FPGAs-Icon_4x.svg" }
         ],
         icon: "fa-certificate",
         certificateUrl: "https://drive.google.com/file/d/1MqN9zeXr00Z1NGYuPeOz8tAU9edstPKH/view?usp=drive_link" // Add your Google Drive link here
@@ -440,9 +440,9 @@ const certificates = [
         issuer: "DeepLearning.AI",
         date: "2024",
         badges: [
-            {  text: "Scikit learn", iconType: "image", icon: "./assets/python.svg" },
-            {  text: "Tensorflow", iconType: "image", icon: "./assets/python.svg"}, // Fixed typo
-            {  text: "Matplotlib", iconType: "image", icon: "./assets/python.svg"}, // Fixed typo
+            {  text: "Scikit learn", iconType: "image", icon: "assets/scikit-learn.svg" },
+            {  text: "Tensorflow", iconType: "image", icon: "assets/icons/tensorflow.svg"}, // Fixed typo
+            {  text: "Matplotlib", iconType: "image", icon: "assets/Matplotlib.svg"}, // Fixed typo
         ],
         icon: "fa-certificate",
         certificateUrl: "https://drive.google.com/file/d/1_ddhjtz8ZPvHExky-agMp0QhLZRgCsRy/view?usp=sharing" // Add your Google Drive link here
