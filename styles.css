@@ -2138,6 +2138,12 @@ body {
     font-size: 0.9rem;
     padding: 0.75rem 1.5rem;
   }
+  .detail-label {
+    font-size: 0.7rem;
+  }
+  .typing-animation {
+    font-size: 0.65rem;
+  }
 }
 
 /* Adjust card size for 100% scaling */
