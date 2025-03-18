@@ -1,15 +1,15 @@
 [
   {
-    "type": "push",
+    "type": "public",
     "repo": "NishDananjaya.github.io",
-    "time": "1 day ago",
-    "icon": "code-branch",
-    "message": "Add files via upload"
+    "time": "11 hours ago",
+    "icon": "code",
+    "message": null
   },
   {
     "type": "push",
     "repo": "NishDananjaya.github.io",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "Add files via upload"
   },
@@ -17,56 +17,56 @@
     "type": "push",
     "repo": "NishDananjaya.github.io",
     "time": "2 days ago",
+    "icon": "code-branch",
+    "message": "Add files via upload"
+  },
+  {
+    "type": "push",
+    "repo": "NishDananjaya.github.io",
+    "time": "3 days ago",
     "icon": "code-branch",
     "message": "updated"
   },
   {
     "type": "push",
     "repo": "NishDananjaya.github.io",
-    "time": "2 days ago",
+    "time": "3 days ago",
     "icon": "code-branch",
     "message": "added workflow"
   },
   {
     "type": "push",
     "repo": "EEE-SEUSL.github.io",
-    "time": "5 days ago",
+    "time": "6 days ago",
     "icon": "code-branch",
     "message": "Update test.yaml"
   },
   {
     "type": "push",
     "repo": "EEE-SEUSL.github.io",
-    "time": "5 days ago",
+    "time": "6 days ago",
     "icon": "code-branch",
     "message": "Update test.yaml"
   },
   {
     "type": "push",
     "repo": "EEE-SEUSL.github.io",
-    "time": "5 days ago",
+    "time": "6 days ago",
     "icon": "code-branch",
     "message": "Update test.yaml"
   },
   {
     "type": "push",
     "repo": "EEE-SEUSL.github.io",
-    "time": "5 days ago",
+    "time": "6 days ago",
     "icon": "code-branch",
     "message": "Update test.yaml"
   },
   {
     "type": "push",
     "repo": "EEE-SEUSL.github.io",
-    "time": "5 days ago",
+    "time": "6 days ago",
     "icon": "code-branch",
     "message": "Update discussions.json"
-  },
-  {
-    "type": "push",
-    "repo": "EEE-SEUSL.github.io",
-    "time": "5 days ago",
-    "icon": "code-branch",
-    "message": "Update test.yaml"
   }
 ]
