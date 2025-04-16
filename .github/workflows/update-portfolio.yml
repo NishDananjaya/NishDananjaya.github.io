@@ -1,16 +1,12 @@
 name: Update Portfolio Data
 
 on:
-  # Run on push to main branch
   push:
     branches: [ main ]
-  # Run when a new repository is created or updated
   repository_dispatch:
     types: [created, updated]
-  # Run on schedule (once a day)
   schedule:
-    - cron: '0 0 * * *'  # Runs at midnight every day
-  # Allow manual trigger
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -40,5 +36,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/
           git diff --quiet && git diff --staged --quiet || git commit -m "Update portfolio data"
+          git remote set-url origin https://x-access-token:${{ secrets.MY_API_KEY }}@github.com/NishDananjaya/NishDananjaya.github.io.git
           git push
-
