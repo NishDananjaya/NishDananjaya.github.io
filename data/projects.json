@@ -1,0 +1,248 @@
+[
+  {
+    "id": "nishdananjaya",
+    "title": "NishDananjaya",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/NishDananjaya",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "tuya-iot-python",
+    "title": "Tuya IoT Python",
+    "description": "A embedded project.",
+    "category": "embedded",
+    "technologies": [
+      "Python"
+    ],
+    "github": "https://github.com/NishDananjaya/Tuya-IoT-python",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "drowsiness-testing",
+    "title": "Drowsiness_testing",
+    "description": "drowsiness detecting model",
+    "category": "web",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/drowsiness_testing",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "esp-32",
+    "title": "Esp 32",
+    "description": "These are some basic arduino codes for different sensors",
+    "category": "web",
+    "technologies": [
+      "C"
+    ],
+    "github": "https://github.com/NishDananjaya/Esp-32",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "esp-connect",
+    "title": "ESP Connect",
+    "description": "Mobile app to send the WiFi credentials to ESP32 easily",
+    "category": "web",
+    "technologies": [
+      "C++"
+    ],
+    "github": "https://github.com/NishDananjaya/ESP-connect",
+    "demo": null,
+    "stars": 0,
+    "forks": 1,
+    "featured": false
+  },
+  {
+    "id": "iot-device",
+    "title": "IoT Device",
+    "description": "A embedded project.",
+    "category": "embedded",
+    "technologies": [
+      "CSS"
+    ],
+    "github": "https://github.com/NishDananjaya/IoT-device",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "mcq-generator",
+    "title": "MCQ_Generator",
+    "description": "This is a mcq generator web app which was created by Lang chain Gemini and streamlit",
+    "category": "web",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/MCQ_Generator",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "lipo-battery-charger",
+    "title": "Lipo_battery_charger",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/Lipo_battery_charger",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "engineering-chat-bot",
+    "title": "Engineering Chat Bot",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/Engineering-chat-bot",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "digital-system-design-course",
+    "title": "Digital_system_design_course",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "SystemVerilog"
+    ],
+    "github": "https://github.com/NishDananjaya/Digital_system_design_course",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "gemini-chatbot-sinhala",
+    "title": "Gemini_chatbot_sinhala",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "Python"
+    ],
+    "github": "https://github.com/NishDananjaya/Gemini_chatbot_sinhala",
+    "demo": null,
+    "stars": 1,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "genai-course",
+    "title": "GenAI_Course",
+    "description": "A ai project.",
+    "category": "ai",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/GenAI_Course",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "defect-detection-yolov5",
+    "title": "Defect_detection_YOLOV5",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "Python"
+    ],
+    "github": "https://github.com/NishDananjaya/defect_detection_YOLOV5",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "heart-disease-prediction",
+    "title": "Heart_Disease_prediction",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/Heart_Disease_prediction",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "emotion-detector",
+    "title": "Emotion Detector",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/Emotion-Detector",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "gyro-sensor-pcb",
+    "title": "Gyro_Sensor_PCB",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/Gyro_Sensor_PCB",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "hand-tracker",
+    "title": "Hand Tracker",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/Hand-Tracker",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "landing-page",
+    "title": "Landing_page",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "CSS"
+    ],
+    "github": "https://github.com/NishDananjaya/Landing_page",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  }
+]

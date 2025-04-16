@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishan Dananjaya</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html"><i class="fab fa-github"></i> <span>Portfolio</span></a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="profile-image">
+          <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Profile Image">
+        </div>
+        <h1 class="glitch-text">Hello, I'm <span class="highlight">Nishan Dananjaya</span></h1>
+        <div class="typing-container">
+          <span id="typing-text"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="bio">Passionate about creating elegant solutions to complex problems. I have hands on expirience on IoT Embedded systems AI/ML and PCB design.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn primary-btn">About Me</a>
+          <a href="contact.html" class="btn secondary-btn">Get In Touch</a>
+          <a href="data/Nishan Dananjaya CV_SouthEastern_university_of_srilanka.pdf" class="btn primary-btn" download>Download CV</a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-dev"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a passionate developer with expertise in AI, FPGA development, and embedded systems. With a strong foundation in computer science and a keen eye for detail, I strive to create efficient and innovative solutions to complex problems.</p>
+          <p>My journey in technology began with a curiosity about how things work, which led me to explore various domains from low-level hardware programming to high-level AI algorithms.</p>
+          <div class="github-stats">
+            <div class="stat-card">
+              <i class="fas fa-code-branch"></i>
+              <span class="stat-number" id="repo-count">0</span>
+              <span class="stat-label">Repositories</span>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-star"></i>
+              <span class="stat-number" id="star-count">0</span>
+              <span class="stat-label">Stars</span>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-code"></i>
+              <span class="stat-number" id="commit-count">0</span>
+              <span class="stat-label">Commits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <div class="section-container">
+      <div class="section-title">
+        <h2>Education</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <h3>Master of Science in Computer Engineering</h3>
+            <h4>Stanford University</h4>
+            <p class="timeline-date">2018 - 2020</p>
+            <p>Specialized in AI and Machine Learning with a focus on embedded systems. Graduated with honors.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <h3>Bachelor of Engineering in Electronics</h3>
+            <h4>MIT</h4>
+            <p class="timeline-date">2014 - 2018</p>
+            <p>Focused on digital systems design and FPGA programming. Participated in multiple hackathons and research projects.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <h3>High School Diploma</h3>
+            <h4>Tech High School</h4>
+            <p class="timeline-date">2010 - 2014</p>
+            <p>Graduated with distinction in Mathematics and Computer Science.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section class="skills" id="skills">
+  <div class="section-container">
+    <div class="section-title">
+      <h2>Skills</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="skills-grid">
+      <!-- Programming Languages Column -->
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar python" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar javascript" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-code"></i> C/C++</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar cpp" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-microchip"></i> VHDL</span>
+              <span class="skill-percentage">60%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar vhdl" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Frameworks & Tools Column -->
+      <div class="skill-category">
+        <h3>Frameworks & Tools</h3>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-t"></i> TensorFlow</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar tensorflow" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-database"></i> SQL</span>
+              <span class="skill-percentage">60%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar sql" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-docker"></i> Docker</span>
+              <span class="skill-percentage">50%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar docker" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-p"></i> Pytorch</span>
+              <span class="skill-percentage">40%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar react" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Specialized Skills Column -->
+      <div class="skill-category">
+        <h3>Specialized Skills</h3>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-robot"></i> Embedded Systems</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar embedded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-code-branch"></i> Git</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar git" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-brain"></i> Machine Learning</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar ml" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fas fa-microchip"></i> FPGA Design</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar fpga" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Featured Projects Section -->
+  <section class="featured-projects" id="featured-projects">
+    <div class="section-container">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="featured-projects-grid">
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <i class="fas fa-folder-open"></i>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">AI-Powered Image Recognition</h3>
+          <p class="project-description">A deep learning model that can identify objects in images with high accuracy using convolutional neural networks.</p>
+          <div class="project-tech">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">TensorFlow</span>
+            <span class="tech-badge">OpenCV</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-star"></i> 45</span>
+            <span><i class="fas fa-code-branch"></i> 12</span>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <i class="fas fa-folder-open"></i>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">FPGA-Based Signal Processor</h3>
+          <p class="project-description">A high-performance digital signal processor implemented on FPGA for real-time audio processing applications.</p>
+          <div class="project-tech">
+            <span class="tech-badge">VHDL</span>
+            <span class="tech-badge">Verilog</span>
+            <span class="tech-badge">Xilinx</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-star"></i> 32</span>
+            <span><i class="fas fa-code-branch"></i> 8</span>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <i class="fas fa-folder-open"></i>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">IoT Home Automation System</h3>
+          <p class="project-description">A complete home automation solution using IoT devices, with a mobile app for remote control and monitoring.</p>
+          <div class="project-tech">
+            <span class="tech-badge">Arduino</span>
+            <span class="tech-badge">ESP32</span>
+            <span class="tech-badge">MQTT</span>
+            <span class="tech-badge">React Native</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-star"></i> 28</span>
+            <span><i class="fas fa-code-branch"></i> 15</span>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-container">
+        <a href="projects.html" class="btn primary-btn">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fab fa-github"></i> <span>Portfolio</span>
+        </div>
+        <p>Designed and built with ❤️ by Nishan Dananjaya</p>
+        <div class="footer-social">
+          <a href="https://github.com/NishDananjaya" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nishan-dananjayab/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.kaggle.com/nishanbandara" class="social-icon"><i class="fab fa-kaggle"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nishan Dananjaya. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
