@@ -1,17 +1,15 @@
-name: Update Portfolio Data
+# This GitHub Actions workflow is designed to automate the process of updating GitHub data for a portfolio.
+name: Update GitHub Data
 
 on:
-  push:
-    branches: [ main ]
-  repository_dispatch:
-    types: [created, updated]
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 * * * *'  # Runs every hour
+  workflow_dispatch:     # Allows manual trigger from GitHub UI
 
 jobs:
-  update-portfolio-data:
+  update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -22,19 +20,18 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install axios fs-extra
+        run: npm install
 
-      - name: Generate portfolio data
+      - name: Run GitHub Data Fetcher
         env:
           GITHUB_TOKEN: ${{ secrets.MY_API_KEY }}
           GITHUB_USERNAME: NishDananjaya
         run: node .github/scripts/generate-portfolio-data.js
 
-      - name: Commit and push if changed
+      - name: Commit and push updated data
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add data/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update portfolio data"
-          git remote set-url origin https://x-access-token:${{ secrets.MY_API_KEY }}@github.com/NishDananjaya/NishDananjaya.github.io.git
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/*.json
+          git commit -m "Update GitHub stats and project data" || echo "No changes to commit"
           git push
