@@ -1,0 +1,40 @@
+{
+  "user": "NishDananjaya",
+  "name": "W.D.N.D. Bandara",
+  "avatar": "https://avatars.githubusercontent.com/u/127168994?v=4",
+  "bio": "I'm currently an Electrical and Electronic undergraduate who interested in artificial intelligence, ML, DL, computer vision, NLP and Gen AI ",
+  "location": "",
+  "email": "",
+  "website": "https://nishdananjaya.github.io/",
+  "twitter": "",
+  "linkedin": "nishdananjaya",
+  "stats": {
+    "repositories": 24,
+    "stars": 1,
+    "followers": 4,
+    "following": 6,
+    "contributions": 0
+  },
+  "languages": [
+    {
+      "name": "Jupyter Notebook",
+      "percentage": 94
+    },
+    {
+      "name": "C",
+      "percentage": 2
+    },
+    {
+      "name": "JavaScript",
+      "percentage": 1
+    },
+    {
+      "name": "HTML",
+      "percentage": 1
+    },
+    {
+      "name": "Other",
+      "percentage": 2
+    }
+  ]
+}
