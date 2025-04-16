@@ -3,7 +3,7 @@ const fs = require("fs-extra")
 const path = require("path")
 
 // GitHub API configuration
-const GITHUB_TOKEN = process.env.MY_API_KEY
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME || "NishDananjaya"
 const API_BASE_URL = "https://api.github.com"
 
