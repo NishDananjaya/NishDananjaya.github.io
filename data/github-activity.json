@@ -16,15 +16,8 @@
   {
     "type": "fork",
     "repo": "introduction-to-github",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "public",
-    "repo": "NishDananjaya.github.io",
-    "time": "29 days ago",
-    "icon": "code",
     "message": null
   }
 ]
