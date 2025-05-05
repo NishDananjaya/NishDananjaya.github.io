@@ -1,72 +1,72 @@
 [
   {
-    "type": "create",
+    "type": "push",
     "repo": "FYP",
-    "time": "2 days ago",
+    "time": "11 hours ago",
     "icon": "code-branch",
-    "message": null
+    "message": "Merge pull request #2 from NishDananjaya/main\n\nMerge pull request #1 from NishDananjaya/Nishan"
   },
   {
-    "type": "member",
+    "type": "pull_request",
     "repo": "FYP",
-    "time": "5 days ago",
-    "icon": "code",
-    "message": null
+    "time": "11 hours ago",
+    "icon": "code-pull-request",
+    "message": "Merge pull request #2 from NishDananjaya/main"
   },
   {
-    "type": "create",
+    "type": "pull_request",
     "repo": "FYP",
-    "time": "5 days ago",
+    "time": "12 hours ago",
+    "icon": "code-pull-request",
+    "message": "Merge pull request #2 from NishDananjaya/main"
+  },
+  {
+    "type": "push",
+    "repo": "FYP",
+    "time": "12 hours ago",
     "icon": "code-branch",
-    "message": null
+    "message": "Merge pull request #1 from NishDananjaya/Nishan\n\nadded ws via internet"
   },
   {
-    "type": "create",
+    "type": "pull_request",
     "repo": "FYP",
-    "time": "5 days ago",
-    "icon": "plus",
-    "message": "Created repository FYP"
+    "time": "12 hours ago",
+    "icon": "code-pull-request",
+    "message": "Merge pull request #1 from NishDananjaya/Nishan"
   },
   {
-    "type": "create",
+    "type": "pull_request",
     "repo": "FYP",
-    "time": "5 days ago",
-    "icon": "code-branch",
-    "message": null
+    "time": "12 hours ago",
+    "icon": "code-pull-request",
+    "message": "Merge pull request #1 from NishDananjaya/Nishan"
   },
   {
-    "type": "create",
+    "type": "push",
     "repo": "FYP",
-    "time": "5 days ago",
-    "icon": "plus",
-    "message": "Created repository FYP"
+    "time": "12 hours ago",
+    "icon": "code-branch",
+    "message": "added ws via internet"
   },
   {
-    "type": "create",
+    "type": "pull_request",
     "repo": "FYP",
-    "time": "5 days ago",
-    "icon": "code-branch",
-    "message": null
+    "time": "12 hours ago",
+    "icon": "code-pull-request",
+    "message": "added ws via internet"
   },
   {
-    "type": "create",
-    "repo": "skills-introduction-to-github",
-    "time": "18 days ago",
+    "type": "push",
+    "repo": "FYP",
+    "time": "12 hours ago",
     "icon": "code-branch",
-    "message": null
+    "message": "added internet server.js"
   },
   {
-    "type": "create",
-    "repo": "skills-introduction-to-github",
-    "time": "18 days ago",
-    "icon": "plus",
-    "message": "Created repository skills-introduction-to-github"
-  },
-  {
-    "type": "fork",
-    "repo": "introduction-to-github",
-    "time": "19 days ago",
-    "icon": "code-branch",
-    "message": null
+    "type": "pull_request",
+    "repo": "FYP",
+    "time": "12 hours ago",
+    "icon": "code-pull-request",
+    "message": "added ws via internet"
   }
 ]
