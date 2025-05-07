@@ -1,72 +1,72 @@
 [
   {
+    "type": "delete",
+    "repo": "FYP",
+    "time": "9 hours ago",
+    "icon": "code",
+    "message": null
+  },
+  {
     "type": "push",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "Merge pull request #2 from NishDananjaya/main\n\nMerge pull request #1 from NishDananjaya/Nishan"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "Merge pull request #2 from NishDananjaya/main"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "Merge pull request #2 from NishDananjaya/main"
   },
   {
     "type": "push",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "Merge pull request #1 from NishDananjaya/Nishan\n\nadded ws via internet"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "Merge pull request #1 from NishDananjaya/Nishan"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "Merge pull request #1 from NishDananjaya/Nishan"
   },
   {
     "type": "push",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "added ws via internet"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "added ws via internet"
   },
   {
     "type": "push",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "added internet server.js"
-  },
-  {
-    "type": "pull_request",
-    "repo": "FYP",
-    "time": "1 day ago",
-    "icon": "code-pull-request",
-    "message": "added ws via internet"
   }
 ]
