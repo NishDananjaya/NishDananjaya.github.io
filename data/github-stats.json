@@ -13,7 +13,7 @@
     "stars": 1,
     "followers": 4,
     "following": 6,
-    "contributions": 10
+    "contributions": 18
   },
   "languages": [
     {
@@ -25,11 +25,11 @@
       "percentage": 2
     },
     {
-      "name": "JavaScript",
+      "name": "HTML",
       "percentage": 1
     },
     {
-      "name": "HTML",
+      "name": "JavaScript",
       "percentage": 1
     },
     {
