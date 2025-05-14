@@ -2,70 +2,70 @@
   {
     "type": "push",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "added server.js"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "added server.js"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "added server.js"
   },
   {
     "type": "push",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "added server.js"
   },
   {
     "type": "push",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "added system monitor"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "added system monitor"
   },
   {
     "type": "pull_request",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-pull-request",
     "message": "added system monitor"
   },
   {
     "type": "create",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": null
   },
   {
     "type": "push",
     "repo": "FYP",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "icon": "code-branch",
     "message": "websocket folder added"
   },
   {
     "type": "delete",
     "repo": "FYP",
-    "time": "6 days ago",
+    "time": "7 days ago",
     "icon": "code",
     "message": null
   }
