@@ -13,23 +13,23 @@
     "stars": 1,
     "followers": 4,
     "following": 6,
-    "contributions": 18
+    "contributions": 22
   },
   "languages": [
     {
       "name": "Jupyter Notebook",
-      "percentage": 94
+      "percentage": 93
     },
     {
       "name": "C",
-      "percentage": 2
-    },
-    {
-      "name": "JavaScript",
-      "percentage": 1
+      "percentage": 3
     },
     {
       "name": "HTML",
+      "percentage": 1
+    },
+    {
+      "name": "Python",
       "percentage": 1
     },
     {

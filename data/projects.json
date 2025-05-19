@@ -1,5 +1,19 @@
 [
   {
+    "id": "fyp",
+    "title": "FYP",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "C"
+    ],
+    "github": "https://github.com/NishDananjaya/FYP",
+    "demo": null,
+    "stars": 0,
+    "forks": 1,
+    "featured": false
+  },
+  {
     "id": "nishdananjaya-github-io",
     "title": "NishDananjaya.Github.Io",
     "description": "A web project.",
@@ -8,20 +22,6 @@
       "JavaScript"
     ],
     "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "fyp",
-    "title": "FYP",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "HTML"
-    ],
-    "github": "https://github.com/NishDananjaya/FYP",
     "demo": null,
     "stars": 0,
     "forks": 0,
