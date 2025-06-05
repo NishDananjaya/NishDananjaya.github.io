@@ -13,7 +13,7 @@
     "stars": 1,
     "followers": 4,
     "following": 6,
-    "contributions": 30
+    "contributions": 20
   },
   "languages": [
     {
@@ -25,7 +25,7 @@
       "percentage": 3
     },
     {
-      "name": "Python",
+      "name": "JavaScript",
       "percentage": 1
     },
     {
