@@ -1,5 +1,33 @@
 [
   {
+    "id": "fyp",
+    "title": "FYP",
+    "description": "An XCP-based live debugging system for embedded vehicle chargers, enabling remote monitoring and parameter tuning via Raspberry Pi, STM32, and WebSocket communication.",
+    "category": "embedded",
+    "technologies": [
+      "C"
+    ],
+    "github": "https://github.com/NishDananjaya/FYP",
+    "demo": null,
+    "stars": 0,
+    "forks": 1,
+    "featured": false
+  },
+  {
+    "id": "async-fifo",
+    "title": "Async_FIFO",
+    "description": "An asynchronous FIFO is a buffer that transfers data safely between circuits running on different clocks. It stores data in the order written (first-in, first-out) using dual-port memory and separate read/write pointers, with Gray code and control logic to avoid errors and signal full or empty states.",
+    "category": "web",
+    "technologies": [
+      "Verilog"
+    ],
+    "github": "https://github.com/NishDananjaya/async_FIFO",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
     "id": "nishdananjaya-github-io",
     "title": "NishDananjaya.Github.Io",
     "description": "A web project.",
@@ -14,17 +42,15 @@
     "featured": false
   },
   {
-    "id": "fyp",
-    "title": "FYP",
+    "id": "laod-flow-analysys",
+    "title": "Laod_flow_analysys",
     "description": "A web project.",
     "category": "web",
-    "technologies": [
-      "C"
-    ],
-    "github": "https://github.com/NishDananjaya/FYP",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/laod_flow_analysys",
     "demo": null,
     "stars": 0,
-    "forks": 1,
+    "forks": 0,
     "featured": false
   },
   {
@@ -132,7 +158,7 @@
     "github": "https://github.com/NishDananjaya/MCQ_Generator",
     "demo": null,
     "stars": 0,
-    "forks": 0,
+    "forks": 1,
     "featured": false
   },
   {
