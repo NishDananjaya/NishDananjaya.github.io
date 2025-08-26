@@ -1,13 +1,13 @@
 [
   {
-    "id": "nishdananjaya-github-io",
-    "title": "NishDananjaya.Github.Io",
+    "id": "async-fifo",
+    "title": "Async_FIFO",
     "description": "A web project.",
     "category": "web",
     "technologies": [
-      "JavaScript"
+      "Verilog"
     ],
-    "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
+    "github": "https://github.com/NishDananjaya/async_FIFO",
     "demo": null,
     "stars": 0,
     "forks": 0,
@@ -25,6 +25,32 @@
     "demo": null,
     "stars": 0,
     "forks": 1,
+    "featured": false
+  },
+  {
+    "id": "laod-flow-analysys",
+    "title": "Laod_flow_analysys",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/laod_flow_analysys",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "nishdananjaya-github-io",
+    "title": "NishDananjaya.Github.Io",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
     "featured": false
   },
   {
@@ -132,7 +158,7 @@
     "github": "https://github.com/NishDananjaya/MCQ_Generator",
     "demo": null,
     "stars": 0,
-    "forks": 0,
+    "forks": 1,
     "featured": false
   },
   {
