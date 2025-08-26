@@ -1,5 +1,19 @@
 [
   {
+    "id": "nishdananjaya-github-io",
+    "title": "NishDananjaya.Github.Io",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
     "id": "fyp",
     "title": "FYP",
     "description": "An XCP-based live debugging system for embedded vehicle chargers, enabling remote monitoring and parameter tuning via Raspberry Pi, STM32, and WebSocket communication.",
@@ -22,20 +36,6 @@
       "Verilog"
     ],
     "github": "https://github.com/NishDananjaya/async_FIFO",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "nishdananjaya-github-io",
-    "title": "NishDananjaya.Github.Io",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "JavaScript"
-    ],
-    "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
     "demo": null,
     "stars": 0,
     "forks": 0,
