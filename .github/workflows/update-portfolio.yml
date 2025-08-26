@@ -9,7 +9,7 @@ on:
     types: [created, updated]
   # Run on schedule (once a day)
   schedule:
-    - cron: '0 0 * * *'  # Runs at midnight every day
+    - cron: '0 0 * * 0'  # Runs at midnight every day
   # Allow manual trigger
   workflow_dispatch:
 
