@@ -23,52 +23,45 @@ function initCertModal() {
 
   // Certificate data
   const certificates = {
-    tensorflow: {
-      title: "TensorFlow Developer Certificate",
-      issuer: "Google",
-      date: "May 2023",
-      id: "TF-2023-05-JD-1234",
+    deeplearning: {
+      title: "Machine Learning Specialization",
+      issuer: "deeplearning.ai",
+      date: "April 2024",
+      // id: "TF-2023-05-JD-1234",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png",
+        "Images/machinel.png",
     },
-    aws: {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "November 2022",
-      id: "AWS-SA-2022-11-JD-5678",
+    entc: {
+      title: "Fundamentals of Digital System Design",
+      issuer: "ENTC UOM",
+      date: "November 2024",
+      // id: "AWS-SA-2022-11-JD-5678",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png",
+        "Images/dsd.png",
     },
     python: {
-      title: "Python for Data Science and Machine Learning",
-      issuer: "Coursera",
-      date: "July 2022",
-      id: "COURSERA-PY-2022-07-JD-9012",
+      title: "Object-Oriented Programming (OOP) - Learn to Code Faster",
+      issuer: "Udemy",
+      date: "January 2025",
+      id: "UC-3d72fed9-0d33-4939-a87e-2c00f71e4820",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
+        "Images/python.png",
     },
     cpp: {
-      title: "Advanced C++ Programming",
-      issuer: "Udacity",
-      date: "October 2021",
-      id: "UDACITY-CPP-2021-10-JD-3456",
+      title: "The Complete C++ Programming Course from Basic to Expert",
+      issuer: "Udemy",
+      date: "January 2025",
+      id: "UC-062035f4-b357-4ff3-bc9a-62479bf4bde3",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png",
+        "Images/cpp.png",
     },
-    kubernetes: {
-      title: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      date: "March 2021",
-      id: "CKA-2021-03-JD-7890",
+    ibm: {
+      title: "Machine learning introduction for everyone",
+      issuer: "IBM",
+      date: "July 2023",
+      // id: "CKA-2021-03-JD-7890",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png",
-    },
-    xilinx: {
-      title: "Xilinx FPGA Design Certification",
-      issuer: "Xilinx",
-      date: "August 2020",
-      id: "XILINX-FPGA-2020-08-JD-1357",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Xilinx_logo.svg/1200px-Xilinx_logo.svg.png",
+        "Images/ibmcert.png",
     },
   }
 
