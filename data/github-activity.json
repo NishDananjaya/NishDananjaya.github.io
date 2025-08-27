@@ -2,7 +2,14 @@
   {
     "type": "push",
     "repo": "NishDananjaya.github.io",
-    "time": "3 hours ago",
+    "time": "6 hours ago",
+    "icon": "code-branch",
+    "message": "updated to sunday midnight"
+  },
+  {
+    "type": "push",
+    "repo": "NishDananjaya.github.io",
+    "time": "9 hours ago",
     "icon": "code-branch",
     "message": "modified"
   }

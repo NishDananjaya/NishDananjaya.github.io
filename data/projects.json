@@ -1,8 +1,170 @@
 [
   {
+    "id": "gyro-sensor-pcb",
+    "title": "Gyro_Sensor_PCB",
+    "description": "A PCB using the MPU 6050 sensor and an STM32 microcontroller.",
+    "category": "web",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/Gyro_Sensor_PCB",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "emotion-detector",
+    "title": "Emotion Detector",
+    "description": "Emotion detector using a pretrained model.",
+    "category": "web",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/Emotion-Detector",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "heart-disease-prediction",
+    "title": "Heart_Disease_prediction",
+    "description": "Hear disease prediction model using simple machine learning algorithms. used streamlit.",
+    "category": "ai",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/Heart_Disease_prediction",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "defect-detection-yolov5",
+    "title": "Defect_detection_YOLOV5",
+    "description": "Defect detection YOLO model for the tape manufacturing process which will be used for the production of sails in north sails manufacturing plant.",
+    "category": "web",
+    "technologies": [
+      "Python"
+    ],
+    "github": "https://github.com/NishDananjaya/defect_detection_YOLOV5",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "genai-course",
+    "title": "GenAI_Course",
+    "description": "Generative AI course codes.",
+    "category": "ai",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/GenAI_Course",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "gemini-chatbot-sinhala",
+    "title": "Gemini_chatbot_sinhala",
+    "description": "A chat bot which have sinhala and tamil language translation and also voice, used google translator, google text to speech, streamlit, gemini API.",
+    "category": "web",
+    "technologies": [
+      "Python"
+    ],
+    "github": "https://github.com/NishDananjaya/Gemini_chatbot_sinhala",
+    "demo": null,
+    "stars": 1,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "lipo-battery-charger",
+    "title": "Lipo_battery_charger",
+    "description": "pcb layout of a LIPO battery charger.",
+    "category": "web",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/Lipo_battery_charger",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "engineering-chat-bot",
+    "title": "Engineering Chat Bot",
+    "description": "Chat bot which will be your assistant to the engineering questions and projects.",
+    "category": "web",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "github": "https://github.com/NishDananjaya/Engineering-chat-bot",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "digital-system-design-course",
+    "title": "Digital_system_design_course",
+    "description": "Comprehensive course on fundementals of the digital system design. learned basics about verilog modules and test benches.",
+    "category": "web",
+    "technologies": [
+      "SystemVerilog"
+    ],
+    "github": "https://github.com/NishDananjaya/Digital_system_design_course",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "tuya-iot-python",
+    "title": "Tuya IoT Python",
+    "description": "Custom application to control Tuya supported four gang switch using tuya API. it has functionalities such as basic on/ off modes and timers.",
+    "category": "embedded",
+    "technologies": [
+      "Python"
+    ],
+    "github": "https://github.com/NishDananjaya/Tuya-IoT-python",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "laod-flow-analysys",
+    "title": "Laod_flow_analysys",
+    "description": "A software developed to do load flow analysis using Gauss seidal iteration method, newton rarphson and fast decoupled iteration method.",
+    "category": "web",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/laod_flow_analysys",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "async-fifo",
+    "title": "Async_FIFO",
+    "description": "An asynchronous FIFO is a buffer that transfers data safely between circuits running on different clocks. This is a verilog implementation of async fifo module with proper read write pointers.",
+    "category": "web",
+    "technologies": [
+      "Verilog"
+    ],
+    "github": "https://github.com/NishDananjaya/async_FIFO",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
     "id": "nishdananjaya-github-io",
     "title": "NishDananjaya.Github.Io",
-    "description": "A web project.",
+    "description": "Portfolio site created using HTML, CSS and JavaScript.",
     "category": "web",
     "technologies": [
       "JavaScript"
@@ -28,32 +190,6 @@
     "featured": false
   },
   {
-    "id": "async-fifo",
-    "title": "Async_FIFO",
-    "description": "An asynchronous FIFO is a buffer that transfers data safely between circuits running on different clocks. It stores data in the order written (first-in, first-out) using dual-port memory and separate read/write pointers, with Gray code and control logic to avoid errors and signal full or empty states.",
-    "category": "web",
-    "technologies": [
-      "Verilog"
-    ],
-    "github": "https://github.com/NishDananjaya/async_FIFO",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "laod-flow-analysys",
-    "title": "Laod_flow_analysys",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [],
-    "github": "https://github.com/NishDananjaya/laod_flow_analysys",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
     "id": "skills-introduction-to-github",
     "title": "Skills Introduction To Github",
     "description": "My clone repository",
@@ -72,20 +208,6 @@
     "category": "web",
     "technologies": [],
     "github": "https://github.com/NishDananjaya/NishDananjaya",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "tuya-iot-python",
-    "title": "Tuya IoT Python",
-    "description": "A embedded project.",
-    "category": "embedded",
-    "technologies": [
-      "Python"
-    ],
-    "github": "https://github.com/NishDananjaya/Tuya-IoT-python",
     "demo": null,
     "stars": 0,
     "forks": 0,
@@ -134,20 +256,6 @@
     "featured": false
   },
   {
-    "id": "iot-device",
-    "title": "IoT Device",
-    "description": "A embedded project.",
-    "category": "embedded",
-    "technologies": [
-      "CSS"
-    ],
-    "github": "https://github.com/NishDananjaya/IoT-device",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
     "id": "mcq-generator",
     "title": "MCQ_Generator",
     "description": "This is a mcq generator web app which was created by Lang chain Gemini and streamlit",
@@ -159,142 +267,6 @@
     "demo": null,
     "stars": 0,
     "forks": 1,
-    "featured": false
-  },
-  {
-    "id": "lipo-battery-charger",
-    "title": "Lipo_battery_charger",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [],
-    "github": "https://github.com/NishDananjaya/Lipo_battery_charger",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "engineering-chat-bot",
-    "title": "Engineering Chat Bot",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "Jupyter Notebook"
-    ],
-    "github": "https://github.com/NishDananjaya/Engineering-chat-bot",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "digital-system-design-course",
-    "title": "Digital_system_design_course",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "SystemVerilog"
-    ],
-    "github": "https://github.com/NishDananjaya/Digital_system_design_course",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "gemini-chatbot-sinhala",
-    "title": "Gemini_chatbot_sinhala",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "Python"
-    ],
-    "github": "https://github.com/NishDananjaya/Gemini_chatbot_sinhala",
-    "demo": null,
-    "stars": 1,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "genai-course",
-    "title": "GenAI_Course",
-    "description": "A ai project.",
-    "category": "ai",
-    "technologies": [
-      "Jupyter Notebook"
-    ],
-    "github": "https://github.com/NishDananjaya/GenAI_Course",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "defect-detection-yolov5",
-    "title": "Defect_detection_YOLOV5",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "Python"
-    ],
-    "github": "https://github.com/NishDananjaya/defect_detection_YOLOV5",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "heart-disease-prediction",
-    "title": "Heart_Disease_prediction",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "Jupyter Notebook"
-    ],
-    "github": "https://github.com/NishDananjaya/Heart_Disease_prediction",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "emotion-detector",
-    "title": "Emotion Detector",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "Jupyter Notebook"
-    ],
-    "github": "https://github.com/NishDananjaya/Emotion-Detector",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "gyro-sensor-pcb",
-    "title": "Gyro_Sensor_PCB",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [],
-    "github": "https://github.com/NishDananjaya/Gyro_Sensor_PCB",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "hand-tracker",
-    "title": "Hand Tracker",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "Jupyter Notebook"
-    ],
-    "github": "https://github.com/NishDananjaya/Hand-Tracker",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
     "featured": false
   },
   {
