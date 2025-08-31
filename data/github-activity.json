@@ -2,14 +2,28 @@
   {
     "type": "push",
     "repo": "NishDananjaya.github.io",
-    "time": "6 hours ago",
+    "time": "3 days ago",
+    "icon": "code-branch",
+    "message": "Add files via upload"
+  },
+  {
+    "type": "push",
+    "repo": "NishDananjaya.github.io",
+    "time": "3 days ago",
+    "icon": "code-branch",
+    "message": "Delete data/Nishan Dananjaya CV_SouthEastern_university_of_srilanka.pdf"
+  },
+  {
+    "type": "push",
+    "repo": "NishDananjaya.github.io",
+    "time": "4 days ago",
     "icon": "code-branch",
     "message": "updated to sunday midnight"
   },
   {
     "type": "push",
     "repo": "NishDananjaya.github.io",
-    "time": "9 hours ago",
+    "time": "4 days ago",
     "icon": "code-branch",
     "message": "modified"
   }
