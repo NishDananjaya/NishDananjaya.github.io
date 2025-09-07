@@ -1,5 +1,31 @@
 [
   {
+    "id": "esp32-provisioning-app",
+    "title": "Esp32_provisioning_app",
+    "description": "ESP 32 wifi porvision app using the SoftAP mode. first the esp32 act as a Access point mode and then connect to the app. after connecting wifi credentials will be sent to the esp32 and esp32 will switch back to the station + AP mode.",
+    "category": "web",
+    "technologies": [
+      "Dart"
+    ],
+    "github": "https://github.com/NishDananjaya/esp32_provisioning_app",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "nishdananjaya",
+    "title": "NishDananjaya",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [],
+    "github": "https://github.com/NishDananjaya/NishDananjaya",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
     "id": "nishdananjaya-github-io",
     "title": "NishDananjaya.Github.Io",
     "description": "Portfolio site created using HTML, CSS and JavaScript.",
@@ -176,38 +202,12 @@
     "featured": false
   },
   {
-    "id": "fyp",
-    "title": "FYP",
-    "description": "An XCP-based live debugging system for embedded vehicle chargers, enabling remote monitoring and parameter tuning via Raspberry Pi, STM32, and WebSocket communication.",
-    "category": "embedded",
-    "technologies": [
-      "C"
-    ],
-    "github": "https://github.com/NishDananjaya/FYP",
-    "demo": null,
-    "stars": 0,
-    "forks": 1,
-    "featured": false
-  },
-  {
     "id": "skills-introduction-to-github",
     "title": "Skills Introduction To Github",
     "description": "My clone repository",
     "category": "web",
     "technologies": [],
     "github": "https://github.com/NishDananjaya/skills-introduction-to-github",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "nishdananjaya",
-    "title": "NishDananjaya",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [],
-    "github": "https://github.com/NishDananjaya/NishDananjaya",
     "demo": null,
     "stars": 0,
     "forks": 0,
@@ -239,20 +239,6 @@
     "demo": null,
     "stars": 0,
     "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "esp-connect",
-    "title": "ESP Connect",
-    "description": "Mobile app to send the WiFi credentials to ESP32 easily",
-    "category": "web",
-    "technologies": [
-      "C++"
-    ],
-    "github": "https://github.com/NishDananjaya/ESP-connect",
-    "demo": null,
-    "stars": 0,
-    "forks": 1,
     "featured": false
   },
   {
