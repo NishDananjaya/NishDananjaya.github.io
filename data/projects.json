@@ -1,5 +1,19 @@
 [
   {
+    "id": "nishdananjaya-github-io",
+    "title": "NishDananjaya.Github.Io",
+    "description": "Portfolio site created using HTML, CSS and JavaScript.",
+    "category": "web",
+    "technologies": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
     "id": "esp32-provisioning-app",
     "title": "Esp32_provisioning_app",
     "description": "ESP 32 wifi porvision app using the SoftAP mode. first the esp32 act as a Access point mode and then connect to the app. after connecting wifi credentials will be sent to the esp32 and esp32 will switch back to the station + AP mode.",
@@ -20,20 +34,6 @@
     "category": "web",
     "technologies": [],
     "github": "https://github.com/NishDananjaya/NishDananjaya",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "nishdananjaya-github-io",
-    "title": "NishDananjaya.Github.Io",
-    "description": "Portfolio site created using HTML, CSS and JavaScript.",
-    "category": "web",
-    "technologies": [
-      "JavaScript"
-    ],
-    "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
     "demo": null,
     "stars": 0,
     "forks": 0,
