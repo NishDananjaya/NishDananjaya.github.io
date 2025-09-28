@@ -1,5 +1,19 @@
 [
   {
+    "id": "nishdananjaya-github-io",
+    "title": "NishDananjaya.Github.Io",
+    "description": "Portfolio site created using HTML, CSS and JavaScript.",
+    "category": "web",
+    "technologies": [
+      "JavaScript"
+    ],
+    "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
     "id": "async-fifo",
     "title": "Async_FIFO",
     "description": "An asynchronous FIFO is a buffer that transfers data safely between circuits running on different clocks. This is a verilog implementation of async fifo module with proper read write pointers.",
@@ -24,20 +38,6 @@
     "github": "https://github.com/NishDananjaya/Gemini_chatbot_sinhala",
     "demo": null,
     "stars": 1,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "nishdananjaya-github-io",
-    "title": "NishDananjaya.Github.Io",
-    "description": "Portfolio site created using HTML, CSS and JavaScript.",
-    "category": "web",
-    "technologies": [
-      "JavaScript"
-    ],
-    "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
-    "demo": null,
-    "stars": 0,
     "forks": 0,
     "featured": false
   },

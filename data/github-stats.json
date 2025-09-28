@@ -11,9 +11,9 @@
   "stats": {
     "repositories": 22,
     "stars": 1,
-    "followers": 9,
+    "followers": 12,
     "following": 10,
-    "contributions": 36
+    "contributions": 41
   },
   "languages": [
     {
@@ -25,11 +25,11 @@
       "percentage": 2
     },
     {
-      "name": "Python",
+      "name": "JavaScript",
       "percentage": 1
     },
     {
-      "name": "JavaScript",
+      "name": "HTML",
       "percentage": 1
     },
     {

@@ -1,72 +1,72 @@
 [
   {
     "type": "push",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "edited - DevN"
+  },
+  {
+    "type": "pull_request",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-pull-request",
+    "message": "changed location"
+  },
+  {
+    "type": "pull_request",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-pull-request",
+    "message": "changed location"
+  },
+  {
+    "type": "push",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "Merge pull request #4 from NishDananjaya/main\n\nmodified GUI and added feature - DevN"
+  },
+  {
+    "type": "push",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "edited - DevN"
+  },
+  {
+    "type": "push",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "modified GUI and added feature - DevN"
+  },
+  {
+    "type": "pull_request",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-pull-request",
+    "message": "modified GUI and added feature - DevN"
+  },
+  {
+    "type": "pull_request",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-pull-request",
+    "message": "modified GUI and added feature - DevN"
+  },
+  {
+    "type": "push",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "modified GUI and added feature - DevN"
+  },
+  {
+    "type": "push",
     "repo": "async_FIFO",
-    "time": "19 hours ago",
+    "time": "7 days ago",
     "icon": "code-branch",
     "message": "edited"
-  },
-  {
-    "type": "push",
-    "repo": "async_FIFO",
-    "time": "19 hours ago",
-    "icon": "code-branch",
-    "message": "added images"
-  },
-  {
-    "type": "comment",
-    "repo": "async_FIFO",
-    "time": "19 hours ago",
-    "icon": "comment",
-    "message": "<img width=\"1852\" height=\"442\" alt=\"Image\" src=\"https://gith..."
-  },
-  {
-    "type": "push",
-    "repo": "async_FIFO",
-    "time": "19 hours ago",
-    "icon": "code-branch",
-    "message": "test"
-  },
-  {
-    "type": "push",
-    "repo": "async_FIFO",
-    "time": "19 hours ago",
-    "icon": "code-branch",
-    "message": "test"
-  },
-  {
-    "type": "push",
-    "repo": "async_FIFO",
-    "time": "19 hours ago",
-    "icon": "code-branch",
-    "message": "added image"
-  },
-  {
-    "type": "issue",
-    "repo": "async_FIFO",
-    "time": "19 hours ago",
-    "icon": "exclamation-circle",
-    "message": "images"
-  },
-  {
-    "type": "push",
-    "repo": "async_FIFO",
-    "time": "20 hours ago",
-    "icon": "code-branch",
-    "message": "test"
-  },
-  {
-    "type": "push",
-    "repo": "async_FIFO",
-    "time": "20 hours ago",
-    "icon": "code-branch",
-    "message": "modified readme"
-  },
-  {
-    "type": "push",
-    "repo": "async_FIFO",
-    "time": "20 hours ago",
-    "icon": "code-branch",
-    "message": "added readme"
   }
 ]
