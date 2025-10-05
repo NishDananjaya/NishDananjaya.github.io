@@ -1,72 +1,72 @@
 [
   {
     "type": "push",
-    "repo": "FYP_Remote_Live_Debug_System",
-    "time": "6 days ago",
+    "repo": "expense-tracker",
+    "time": "5 days ago",
     "icon": "code-branch",
-    "message": "edited - DevN"
-  },
-  {
-    "type": "pull_request",
-    "repo": "FYP_Remote_Live_Debug_System",
-    "time": "6 days ago",
-    "icon": "code-pull-request",
-    "message": "changed location"
-  },
-  {
-    "type": "pull_request",
-    "repo": "FYP_Remote_Live_Debug_System",
-    "time": "6 days ago",
-    "icon": "code-pull-request",
-    "message": "changed location"
+    "message": "feat: Add PWA manifest and update favicons\n\nIntegrates Progressive Web App capabilities by adding a manifest file,\nupdating the favicon to an SVG, and setting the theme color for better\nvisual consistency across different platforms. Also includes a basic\nCordova config.xml for potential hybrid app deployment."
   },
   {
     "type": "push",
-    "repo": "FYP_Remote_Live_Debug_System",
-    "time": "6 days ago",
+    "repo": "expense-tracker",
+    "time": "5 days ago",
     "icon": "code-branch",
-    "message": "Merge pull request #4 from NishDananjaya/main\n\nmodified GUI and added feature - DevN"
+    "message": "feat: Enhance profile and insights with budgets and personalization\n\nIntroduces budget tracking functionality and enhances user personalization.\n\n- Adds `Budgets` type and integrates it into `Insights` and `Profile` components.\n- Implements `BudgetTracker` component within `Insights`.\n- Enhances `Profile` to allow users to set budgets per category and select avatars.\n- Adds new styles for custom scrollbars in `index.html`.\n- Updates `App.tsx` with a helper function for local date strings and an AI icon.\n- Modifies `Dashboard.tsx` to display a personalized greeting and the current date."
   },
   {
     "type": "push",
-    "repo": "FYP_Remote_Live_Debug_System",
+    "repo": "expense-tracker",
     "time": "6 days ago",
     "icon": "code-branch",
-    "message": "edited - DevN"
+    "message": "feat(ai-assistant): Refine AI prompt for better financial advice\n\nImprove the system prompt for the AI assistant to provide more personalized, insightful, and encouraging financial advice. The prompt now focuses on analyzing spending and earning data to offer actionable insights and suggestions for improvement, using a friendly and engaging tone with emojis."
   },
   {
     "type": "push",
-    "repo": "FYP_Remote_Live_Debug_System",
+    "repo": "expense-tracker",
     "time": "6 days ago",
     "icon": "code-branch",
-    "message": "modified GUI and added feature - DevN"
-  },
-  {
-    "type": "pull_request",
-    "repo": "FYP_Remote_Live_Debug_System",
-    "time": "6 days ago",
-    "icon": "code-pull-request",
-    "message": "modified GUI and added feature - DevN"
-  },
-  {
-    "type": "pull_request",
-    "repo": "FYP_Remote_Live_Debug_System",
-    "time": "6 days ago",
-    "icon": "code-pull-request",
-    "message": "modified GUI and added feature - DevN"
+    "message": "feat(ai): Use hardcoded API key for GenAI\n\nReplaced the check for `process.env.API_KEY` with a hardcoded string for the Google Generative AI API key. This change allows the AI assistant to function without requiring environment variable configuration in this specific development context.\n\nNOTE: This is a temporary solution for local testing and demonstration. In a production environment, the API key should be managed securely."
   },
   {
     "type": "push",
-    "repo": "FYP_Remote_Live_Debug_System",
+    "repo": "expense-tracker",
     "time": "6 days ago",
     "icon": "code-branch",
-    "message": "modified GUI and added feature - DevN"
+    "message": "feat: Integrate AI assistant and update UI\n\nAdds functionality for an AI assistant and enhances the user interface. This includes:\n- Installing the `@google/genai` package.\n- Introducing an AI chat interface with a floating action button in `App.tsx`.\n- Updating the `BottomNav` component with a new icon for reports and modifying existing ones.\n- Modifying `Dashboard.tsx` to include a delete expense function.\n- Adjusting chart data and calculations in `Reports.tsx`.\n- Minor updates to `index.html` and `index.tsx` for dependency imports and StrictMode removal."
   },
   {
     "type": "push",
-    "repo": "async_FIFO",
-    "time": "7 days ago",
+    "repo": "expense-tracker",
+    "time": "6 days ago",
     "icon": "code-branch",
-    "message": "edited"
+    "message": "feat: Add earnings tracking and reporting\n\nIntroduces the ability to track income alongside expenses, providing a more comprehensive view of financial activity. This includes:\n\n- New `Earning` type and `EarningSource` enum.\n- Storage and retrieval of earnings data from localStorage.\n- Configuration for earning sources, similar to categories.\n- Integration into the `App` component to manage earnings state.\n- Updates to `types.ts` to include earnings-related structures.\n- Updates to `constants.ts` to include earning source configurations.\n- Visual updates to `BottomNav` and `Dashboard` to accommodate new features.\n- A new `Reports` screen is introduced, though its implementation is minimal in this commit.\n- Changes the default font to 'Nunito' for improved aesthetics.\n- Updates the `AddTransactionModal` to handle both expenses and earnings.\n- Refactors the `Dashboard` to display both expenses and earnings for the current day and month.\n- Renames `AddExpenseModal` to `AddTransactionModal` to reflect broader functionality."
+  },
+  {
+    "type": "push",
+    "repo": "expense-tracker",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "feat: Enhance UI with new animations and improve expense handling\n\nIntroduce new CSS animations for slide-in and slide-out effects to improve user experience during screen transitions. Refactor the `handleSaveExpense` function in `App.tsx` to correctly handle both adding new expenses and editing existing ones, ensuring proper ID management and data merging.\n\nIn `components/Insights.tsx`, the pie chart now utilizes a `renderCustomizedLabel` function to display category names and percentages more clearly and farther from the chart. Tooltip and legend styles have also been refined for better readability.\n\n`components/Profile.tsx` now features a rotating financial tip section powered by a `useEffect` hook and a new constant array. The UI includes a lightbulb icon to visually indicate the tips.\n\n`components/AddExpenseModal.tsx` has been updated to correctly pass the expense `id` when editing, ensuring seamless updates. The `onSaveExpense` prop now also accepts an optional `id` for editing scenarios."
+  },
+  {
+    "type": "push",
+    "repo": "expense-tracker",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "feat: Introduce expense editing and welcome modal\n\nThis commit refactors the expense management functionality to support editing existing expenses. It also introduces a welcome modal for new users and enhances the UI with a more dynamic profile display.\n\nKey changes include:\n- Modifying `App.tsx` to manage `editingExpense` state and adapt `handleSaveExpense` for both new and existing entries.\n- Updating `Dashboard.tsx` and `RecentTransactions` to pass `onEditExpense` callbacks and render editable transaction items.\n- Enhancing `AddExpenseModal.tsx` to handle editing existing expenses, pre-filling form fields and modifying its save handler.\n- Updating `Profile.tsx` to dynamically display the user's name and streamline settings.\n- Removing unused CSS related to smooth scrolling in `index.html`.\n- Adding a `WelcomeModal` component (implicitly, by adding its import to `App.tsx`)."
+  },
+  {
+    "type": "push",
+    "repo": "expense-tracker",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "perf: Optimize expense calculations and rendering\n\nMemoize expensive calculations for category totals, daily totals, and weekly data.\nIntroduce a scroll container class for smoother scrolling on iOS devices.\nWrap components in React.memo where appropriate to prevent unnecessary re-renders."
+  },
+  {
+    "type": "push",
+    "repo": "expense-tracker",
+    "time": "6 days ago",
+    "icon": "code-branch",
+    "message": "feat: Implement local storage persistence\n\nIntegrate localStorage to persist expenses and goals across sessions, enhancing user experience by retaining data. Add necessary useEffect hooks and update initial state loading logic to accommodate this."
   }
 ]
