@@ -1,19 +1,5 @@
 [
   {
-    "id": "expense-tracker",
-    "title": "Expense Tracker",
-    "description": "this is an expense tracker app",
-    "category": "web",
-    "technologies": [
-      "TypeScript"
-    ],
-    "github": "https://github.com/NishDananjaya/expense-tracker",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
     "id": "nishdananjaya-github-io",
     "title": "NishDananjaya.Github.Io",
     "description": "Portfolio site created using HTML, CSS and JavaScript.",
@@ -22,6 +8,20 @@
       "JavaScript"
     ],
     "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "expense-tracker",
+    "title": "Expense Tracker",
+    "description": "this is an expense tracker app",
+    "category": "web",
+    "technologies": [
+      "TypeScript"
+    ],
+    "github": "https://github.com/NishDananjaya/expense-tracker",
     "demo": null,
     "stars": 0,
     "forks": 0,
