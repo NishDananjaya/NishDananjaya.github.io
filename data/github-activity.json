@@ -1,71 +1,71 @@
 [
   {
+    "type": "create",
+    "repo": "Traffic-Light-Controller",
+    "time": "6 minutes ago",
+    "icon": "code-branch",
+    "message": null
+  },
+  {
+    "type": "push",
+    "repo": "8-Bit-ALU",
+    "time": "2 hours ago",
+    "icon": "code-branch",
+    "message": null
+  },
+  {
+    "type": "push",
+    "repo": "8-Bit-ALU",
+    "time": "2 hours ago",
+    "icon": "code-branch",
+    "message": null
+  },
+  {
+    "type": "push",
+    "repo": "8-Bit-ALU",
+    "time": "2 hours ago",
+    "icon": "code-branch",
+    "message": null
+  },
+  {
+    "type": "push",
+    "repo": "8-Bit-ALU",
+    "time": "2 hours ago",
+    "icon": "code-branch",
+    "message": null
+  },
+  {
+    "type": "create",
+    "repo": "8-Bit-ALU",
+    "time": "3 hours ago",
+    "icon": "code-branch",
+    "message": null
+  },
+  {
+    "type": "push",
+    "repo": "Load_flow_program",
+    "time": "3 days ago",
+    "icon": "code-branch",
+    "message": null
+  },
+  {
+    "type": "issue",
+    "repo": "Load_flow_program",
+    "time": "3 days ago",
+    "icon": "exclamation-circle",
+    "message": "images"
+  },
+  {
+    "type": "create",
+    "repo": "Load_flow_program",
+    "time": "3 days ago",
+    "icon": "code-branch",
+    "message": null
+  },
+  {
     "type": "push",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "12 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "19 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "19 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "20 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "20 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "20 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "20 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "20 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "20 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "expense-tracker",
-    "time": "20 days ago",
+    "time": "1 month ago",
     "icon": "code-branch",
     "message": null
   }

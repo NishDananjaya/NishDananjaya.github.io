@@ -9,16 +9,20 @@
   "twitter": "",
   "linkedin": "nishdananjaya",
   "stats": {
-    "repositories": 24,
+    "repositories": 26,
     "stars": 1,
     "followers": 10,
     "following": 10,
-    "contributions": 54
+    "contributions": 7
   },
   "languages": [
     {
       "name": "Jupyter Notebook",
-      "percentage": 92
+      "percentage": 91
+    },
+    {
+      "name": "Python",
+      "percentage": 2
     },
     {
       "name": "C",
@@ -26,10 +30,6 @@
     },
     {
       "name": "JavaScript",
-      "percentage": 1
-    },
-    {
-      "name": "HTML",
       "percentage": 1
     },
     {

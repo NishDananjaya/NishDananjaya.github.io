@@ -1,5 +1,47 @@
 [
   {
+    "id": "8-bit-alu",
+    "title": "8 Bit ALU",
+    "description": "A simple 8-bit processor-like system implemented in VHDL, consisting of an ALU, 8-bit D-Flip-Flop registers, a Finite State Machine (FSM) controller, and a 2-to-1 multiplexer. The design supports arithmetic/logic operations with optional accumulation mode.",
+    "category": "web",
+    "technologies": [
+      "VHDL"
+    ],
+    "github": "https://github.com/NishDananjaya/8-Bit-ALU",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "traffic-light-controller",
+    "title": "Traffic Light Controller",
+    "description": "A web project.",
+    "category": "web",
+    "technologies": [
+      "SystemVerilog"
+    ],
+    "github": "https://github.com/NishDananjaya/Traffic-Light-Controller",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "load-flow-program",
+    "title": "Load_flow_program",
+    "description": "This program is create to make load flow analysis calculations. it has newton raphson load flow analysis and gauss seidal iteration method.",
+    "category": "web",
+    "technologies": [
+      "Python"
+    ],
+    "github": "https://github.com/NishDananjaya/Load_flow_program",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
     "id": "nishdananjaya-github-io",
     "title": "NishDananjaya.Github.Io",
     "description": "Portfolio site created using HTML, CSS and JavaScript.",
@@ -198,18 +240,6 @@
       "Python"
     ],
     "github": "https://github.com/NishDananjaya/Tuya-IoT-python",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "laod-flow-analysys",
-    "title": "Laod_flow_analysys",
-    "description": "A software developed to do load flow analysis using Gauss seidal iteration method, newton rarphson and fast decoupled iteration method.",
-    "category": "web",
-    "technologies": [],
-    "github": "https://github.com/NishDananjaya/laod_flow_analysys",
     "demo": null,
     "stars": 0,
     "forks": 0,
