@@ -1,41 +1,13 @@
 [
   {
-    "id": "8-bit-alu",
-    "title": "8 Bit ALU",
-    "description": "A simple 8-bit processor-like system implemented in VHDL, consisting of an ALU, 8-bit D-Flip-Flop registers, a Finite State Machine (FSM) controller, and a 2-to-1 multiplexer. The design supports arithmetic/logic operations with optional accumulation mode.",
-    "category": "web",
-    "technologies": [
-      "VHDL"
-    ],
-    "github": "https://github.com/NishDananjaya/8-Bit-ALU",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
     "id": "traffic-light-controller",
     "title": "Traffic Light Controller",
-    "description": "A web project.",
-    "category": "web",
+    "description": "Smart 2-way traffic light controller in SystemVerilog with 4-state FSM and 3.5s amber timer. Prioritizes main road; activates side road on sensor input. Modular, synthesizable, FPGA-ready. Verified with reset recovery and full testbench.",
+    "category": "fpga",
     "technologies": [
       "SystemVerilog"
     ],
     "github": "https://github.com/NishDananjaya/Traffic-Light-Controller",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "load-flow-program",
-    "title": "Load_flow_program",
-    "description": "This program is create to make load flow analysis calculations. it has newton raphson load flow analysis and gauss seidal iteration method.",
-    "category": "web",
-    "technologies": [
-      "Python"
-    ],
-    "github": "https://github.com/NishDananjaya/Load_flow_program",
     "demo": null,
     "stars": 0,
     "forks": 0,
@@ -50,6 +22,34 @@
       "JavaScript"
     ],
     "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "8-bit-alu",
+    "title": "8 Bit ALU",
+    "description": "A simple 8-bit processor-like system implemented in VHDL, consisting of an ALU, 8-bit D-Flip-Flop registers, a Finite State Machine (FSM) controller, and a 2-to-1 multiplexer. The design supports arithmetic/logic operations with optional accumulation mode.",
+    "category": "web",
+    "technologies": [
+      "VHDL"
+    ],
+    "github": "https://github.com/NishDananjaya/8-Bit-ALU",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "load-flow-program",
+    "title": "Load_flow_program",
+    "description": "This program is create to make load flow analysis calculations. it has newton raphson load flow analysis and gauss seidal iteration method.",
+    "category": "web",
+    "technologies": [
+      "Python"
+    ],
+    "github": "https://github.com/NishDananjaya/Load_flow_program",
     "demo": null,
     "stars": 0,
     "forks": 0,
