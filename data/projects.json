@@ -1,19 +1,5 @@
 [
   {
-    "id": "traffic-light-controller",
-    "title": "Traffic Light Controller",
-    "description": "Smart 2-way traffic light controller in SystemVerilog with 4-state FSM and 3.5s amber timer. Prioritizes main road; activates side road on sensor input. Modular, synthesizable, FPGA-ready. Verified with reset recovery and full testbench.",
-    "category": "fpga",
-    "technologies": [
-      "SystemVerilog"
-    ],
-    "github": "https://github.com/NishDananjaya/Traffic-Light-Controller",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
     "id": "nishdananjaya-github-io",
     "title": "NishDananjaya.Github.Io",
     "description": "Portfolio site created using HTML, CSS and JavaScript.",
@@ -22,6 +8,20 @@
       "JavaScript"
     ],
     "github": "https://github.com/NishDananjaya/NishDananjaya.github.io",
+    "demo": null,
+    "stars": 0,
+    "forks": 0,
+    "featured": false
+  },
+  {
+    "id": "traffic-light-controller",
+    "title": "Traffic Light Controller",
+    "description": "Smart 2-way traffic light controller in SystemVerilog with 4-state FSM and 3.5s amber timer. Prioritizes main road; activates side road on sensor input. Modular, synthesizable, FPGA-ready. Verified with reset recovery and full testbench.",
+    "category": "fpga",
+    "technologies": [
+      "SystemVerilog"
+    ],
+    "github": "https://github.com/NishDananjaya/Traffic-Light-Controller",
     "demo": null,
     "stars": 0,
     "forks": 0,
