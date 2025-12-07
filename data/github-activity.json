@@ -2,71 +2,71 @@
   {
     "type": "push",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
+    "time": "28 days ago",
     "icon": "code-branch",
     "message": null
   },
   {
     "type": "push",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
+    "time": "28 days ago",
     "icon": "code-branch",
     "message": null
   },
   {
     "type": "pull_request",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
+    "time": "28 days ago",
+    "icon": "code-pull-request",
+    "message": null
+  },
+  {
+    "type": "pull_request",
+    "repo": "FYP_Remote_Live_Debug_System",
+    "time": "28 days ago",
     "icon": "code-pull-request",
     "message": null
   },
   {
     "type": "push",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
+    "time": "28 days ago",
     "icon": "code-branch",
     "message": null
   },
   {
     "type": "push",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
+    "time": "28 days ago",
     "icon": "code-branch",
     "message": null
   },
   {
     "type": "push",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
+    "time": "28 days ago",
     "icon": "code-branch",
     "message": null
   },
   {
     "type": "push",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
+    "time": "28 days ago",
     "icon": "code-branch",
     "message": null
   },
   {
     "type": "pull_request",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
+    "time": "28 days ago",
     "icon": "code-pull-request",
     "message": null
   },
   {
-    "type": "push",
+    "type": "pull_request",
     "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
-    "icon": "code-branch",
-    "message": null
-  },
-  {
-    "type": "push",
-    "repo": "FYP_Remote_Live_Debug_System",
-    "time": "21 days ago",
-    "icon": "code-branch",
+    "time": "28 days ago",
+    "icon": "code-pull-request",
     "message": null
   }
 ]
