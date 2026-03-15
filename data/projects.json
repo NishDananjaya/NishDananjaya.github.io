@@ -178,40 +178,12 @@
     "featured": false
   },
   {
-    "id": "genai-course",
-    "title": "GenAI_Course",
-    "description": "Generative AI course codes.",
-    "category": "ai",
-    "technologies": [
-      "Jupyter Notebook"
-    ],
-    "github": "https://github.com/NishDananjaya/GenAI_Course",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
     "id": "lipo-battery-charger",
     "title": "Lipo_battery_charger",
     "description": "pcb layout of a LIPO battery charger.",
     "category": "web",
     "technologies": [],
     "github": "https://github.com/NishDananjaya/Lipo_battery_charger",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
-    "featured": false
-  },
-  {
-    "id": "engineering-chat-bot",
-    "title": "Engineering Chat Bot",
-    "description": "Chat bot which will be your assistant to the engineering questions and projects.",
-    "category": "web",
-    "technologies": [
-      "Jupyter Notebook"
-    ],
-    "github": "https://github.com/NishDananjaya/Engineering-chat-bot",
     "demo": null,
     "stars": 0,
     "forks": 0,
@@ -285,20 +257,6 @@
     "demo": null,
     "stars": 0,
     "forks": 1,
-    "featured": false
-  },
-  {
-    "id": "landing-page",
-    "title": "Landing_page",
-    "description": "A web project.",
-    "category": "web",
-    "technologies": [
-      "CSS"
-    ],
-    "github": "https://github.com/NishDananjaya/Landing_page",
-    "demo": null,
-    "stars": 0,
-    "forks": 0,
     "featured": false
   }
 ]
